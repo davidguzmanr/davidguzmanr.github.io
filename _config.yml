@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "E. David Guzmán"
 title_separator          : "-"
 name                     : &name "David Guzmán"
-description              : &description "Backpropagated physicist and data scientist"
+description              : &description ""
 url                      : https://davidguzmanr.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "davidguzmanr/davidguzmanr.github.io"
@@ -82,13 +82,13 @@ analytics:
 author:
   name             : "David Guzmán"
   avatar           : "profile.png"
-  bio              : "Your biography for the left-hand sidebar"
+  bio              : "Backpropagated physicist and data scientist"
   location         : "Mexico City"
   employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "http://yourfullgooglescholarurl.com"
   email            : "david_guzmanr@ciencias.unam.mx"
-  researchgate     :  # example: "https://www.researchgate.net/profile/David_Guzman23"
+  researchgate     : "https://www.researchgate.net/profile/David_Guzman23"
   uri              :
   bitbucket        :
   codepen          :
@@ -102,11 +102,11 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
-  orcid            : "http://orcid.org/yourorcidurl"
+  linkedin         : "https://www.linkedin.com/in/enrique-david-guzman-ramirez/"
+  orcid            : #"http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
-  stackoverflow    : # https://stackoverflow.com/users/14428455/david
+  stackoverflow    : "https://stackoverflow.com/users/14428455/david"
   steam            :
   tumblr           :
   twitter          : "replacethistwitterhandle"
