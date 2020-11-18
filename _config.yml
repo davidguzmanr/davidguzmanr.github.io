@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "E. David Guzmán"
 title_separator          : "-"
 name                     : &name "David Guzmán"
-description              : &description "personal description"
+description              : &description "Backpropagated physicist and data scientist"
 url                      : https://davidguzmanr.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "davidguzmanr/davidguzmanr.github.io"
@@ -83,11 +83,11 @@ author:
   name             : "David Guzmán"
   avatar           : "profile.png"
   bio              : "Your biography for the left-hand sidebar"
-  location         : "Location"
+  location         : "Mexico City"
   employer         :
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "http://yourfullgooglescholarurl.com"
-  email            :
+  email            : "david_guzmanr@ciencias.unam.mx"
   researchgate     :  # example: "https://www.researchgate.net/profile/David_Guzman23"
   uri              :
   bitbucket        :
@@ -96,7 +96,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "academicpages"
+  github           : "davidguzmanr"
   google_plus      :
   keybase          :
   instagram        :
