@@ -84,7 +84,7 @@ author:
   avatar           : "profile.png"
   bio              : "Backpropagated physicist and data scientist."
   location         : "Mexico City"
-  employer         :
+  employer         : "IIMAS, UNAM"
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : # "http://yourfullgooglescholarurl.com"
   email            : "david_guzmanr@ciencias.unam.mx"
@@ -263,14 +263,12 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
-  - jekyll-feed
   - jekyll-redirect-from
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
-  - jekyll-feed
   - jemoji
 
 
