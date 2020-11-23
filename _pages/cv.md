@@ -9,25 +9,26 @@ redirect_from:
 
 {% include base_path %}
 
-You can download a copy of my CV [here](My_CV.pdf)
+You can download a copy of my CV [here](My_CV.pdf), I will try to update it as often as I can.
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012-2020
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+- BSc in *Physics*, UNAM, 2015-2020.
+- BSc in *Data Science*, UNAM, 2019-2021 (expected).
 
-Work experience
+Languages 
+=====
+- Spanish, first language.
+- English, professional competence.
+  - Cambridge C1 Level Qualification.
+  - TOEFL iBT: 111/120.
+- French, basic professional competence.
+
+Teaching
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+- 2019: teacher assistant.
+  - Course: Relativity.
+  - Duties: design assignments and help the students.
   
 Skills
 ======
