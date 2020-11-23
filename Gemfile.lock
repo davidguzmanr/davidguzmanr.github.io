@@ -260,6 +260,8 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   hawkins
+  jekyll-feed
+  jekyll-sitemap
 
 BUNDLED WITH
    1.16.1
