@@ -232,10 +232,10 @@ defaults:
       path: ""
       type: portfolio
     values:
-      layout:
-      author_profile: false
-      share: false
-      comment: false
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
   # _talks
   - scope:
       path: ""
