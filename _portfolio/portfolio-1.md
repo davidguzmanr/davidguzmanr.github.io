@@ -1,7 +1,8 @@
 ---
 title: "Adaptative lanes"
-excerpt: "Adaptative lanes <br/><img src='/images/lanes.gif' style='width:500px;height:300px;'>"
+excerpt: "Adaptative lanes for my social service in *Data Science*
+<br/><img src='/images/lanes.gif' style='width:500px;height:300px;'>"
 collection: portfolio
 ---
 
-In progress...
+Under construction...
