@@ -1,7 +1,7 @@
 ---
-title: "Computational geometry"
-excerpt: "Some classic algorithms in *Computational geometry* made in Julia
-<br/><img src='/images/voronoi.gif' style='width:500px'>"
+title: "Adaptative lanes"
+excerpt: "Adaptative lanes for my social service in *Data Science*.
+<br/><img src='/images/lanes.gif' style='width:500px;height:300px;'>"
 collection: portfolio
 ---
 
