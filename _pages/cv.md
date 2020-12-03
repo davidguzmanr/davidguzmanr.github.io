@@ -26,37 +26,23 @@ Languages
 
 Teaching
 ======
-- 2019: teacher assistant.
-  - Course: Relativity.
-  - Duties: design assignments and help the students.
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
-
-Publications
-======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-  
-Teaching
-======
   <ul>{% for post in site.teaching %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+Computational skills
+=====
+
+- **Programming Languages:** Python, Julia, R, Scala, SQL, C, C++, Fortran.
+- **Operating systems:** Unix/Linux (Ubuntu, Lubuntu, Fedora, Debian.
+- **Machine Learning tools:** Scikit-learn, PyCaret, PySpark MLlib.
+- **Deep Learning Tools:** Keras, TensorFlow, PyTorch.
+- **PLN tools:**  NLTK, spaCy, Hugging Face.
+
+Interests
+=====
+- Data Science.
+- Artificial Intelligence.
+- Machine Learning.
+- Deep learning.
+- Computational Linguistics and Natural Language Processing.

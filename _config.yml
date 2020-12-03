@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "David Guzmán"
   avatar           : "profile.png"
-  bio              : "Backpropagated physicist and data scientist."
+  bio              : "Physics and Data Science student."
   location         : "Mexico City"
   employer         : # "IIMAS, UNAM"
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
@@ -106,7 +106,7 @@ author:
   orcid            : # "http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
-  stackoverflow    : "14428455/david"
+  stackoverflow    : #"14428455/david"
   steam            :
   tumblr           :
   twitter          : # "replacethistwitterhandle"
