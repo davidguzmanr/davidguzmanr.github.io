@@ -17,6 +17,7 @@ in *[Data Science](https://cienciadatos.iimas.unam.mx/)*. I also have a BSc in *
 
 My main interests right now are:
 
-- Machine Learning
-- Deep Learning
-- Computational Linguistics and NLP
+- Data Science.
+- Machine Learning.
+- Deep Learning.
+- Computational Linguistics and NLP.
