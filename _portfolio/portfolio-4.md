@@ -1,10 +1,16 @@
 ---
-title: "Dynamics of black holes"
-excerpt: "Dynamics of black holes for my social service in *Physics*.
-<br/><img src='/images/Schwarzschild_n3.gif' style='width:500px;'>"
+title: "Computational geometry"
+excerpt: "Some classic algorithms in *Computational geometry* made in Julia.
+<br/><img src='/images/voronoi.gif' style='width:500px'>"
 collection: portfolio
 ---
 
-Notes and code about black hole shadows. There are some (actually a lot) changes I still have to implement. 
-The code is in [Black-Holes](https://github.com/davidguzmanr/Servicio).
+Some algorithms in Computational geometry in Julia, like
+
+- Intersections
+- Convex hull
+- Voronoi diagrams
+
+There are some (actually a lot) changes I still have to implement. The code is in [Computational Geometry](https://github.com/davidguzmanr/Geometria-Computacional).
+
 

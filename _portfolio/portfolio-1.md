@@ -1,25 +1,15 @@
 ---
-title: "COVID-19 Neural Net"
-excerpt: "Project for my *Pattern Recognition* class. 
-<br/><img src='/images/covid_training.gif' style='width:500px;height:260px;'>"
+title: "SemEval 2021 Task 5: Toxic Spans Detection"
+excerpt: "Project for my *Natural Language Processing* class."
 collection: portfolio
 ---
 
-A critical step in the fight against COVID-19 is effective detection of infected patients so that those 
-infected can receive immediate treatment and care, as well as being isolated to mitigate the spread of 
-the virus. The main detection method used to detect COVID-19 cases is the reverse transcriptase-polymerase 
-chain reaction (RT-PCR).
+Moderation is crucial to promoting healthy online discussions. Although several toxicity (abusive language) detection datasets and 
+models have been released, most of them classify whole comments or documents, and do not identify the spans that make a text toxic. 
+But highlighting such toxic spans can assist human moderators (e.g., news portals moderators) who often deal with lengthy comments, 
+and who prefer attribution instead of just a system-generated unexplained toxicity score per post. The evaluation of systems that could 
+accurately locate toxic spans within a text is thus a crucial step towards successful semi-automated moderation.
 
-An alternative detection method that has also been used for the detection of COVID-19 has been the radiography 
-examination, where radiologists take and analyze chest radiography images (for example, CXR chest radiograph or 
-CT scan) to look for visual indicators associated with COVID-19.
+We trained a LSTM to perform the tagging of the toxic spans. The F1 score of the LSTM in the evaluation dataset was 64.88, which was rather low. However, even the winners of this task just managed to get around 70, we believe the low scores are due to the fact the training dataset was poorly tagged. The page of the competition is [here](https://competitions.codalab.org/competitions/25623#learn_the_details).
 
-We used a pre-trained model called [MobileNetV2](https://keras.io/api/applications/mobilenet/#mobilenetv2-function)
-and *data augmentation*, as the original dataset [COVID-19 CT segmentation dataset
-](http://medicalsegmentation.com/covid19/) is very small. We also used *bagging* to see if we could improve the 
-performance of the model. 
-
-The code with more explanations is in my GitHub [Pattern-Recognition-COVID
-](https://github.com/davidguzmanr/Pattern-Recognition-COVID).
-
-<img src='/images/covid_training.gif' style='width:500px;height:260px;' class='center'>
+The code with more explanations is in my GitHub [SemEval2021](https://github.com/davidguzmanr/SemEval2021).
