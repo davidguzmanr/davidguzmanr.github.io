@@ -1,6 +1,7 @@
 ---
 title: "SemEval 2021 Task 5: Toxic Spans Detection"
-excerpt: "Project for my *Natural Language Processing* class."
+excerpt: "Project for my *Natural Language Processing* class. 
+<br/><img src='/images/semeval-app.gif' style='width:500px;height:260px;' class='center'>"
 collection: portfolio
 ---
 
@@ -13,3 +14,5 @@ accurately locate toxic spans within a text is thus a crucial step towards succe
 We trained a LSTM to perform the tagging of the toxic spans. The F1 score of the LSTM in the evaluation dataset was 64.88, which was rather low. However, even the winners of this task just managed to get around 70, we believe the low scores are due to the fact the training dataset was poorly tagged. The page of the competition is [here](https://competitions.codalab.org/competitions/25623#learn_the_details).
 
 The code with more explanations is in my GitHub [SemEval2021](https://github.com/davidguzmanr/SemEval2021).
+
+<img src='/images/semeval-app.gif' style='width:500px;height:260px;' class='center'>
