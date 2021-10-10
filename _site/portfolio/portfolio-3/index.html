@@ -19,7 +19,7 @@
 
 
 
-<title>Adaptive lanes - David Guzmán</title>
+<title>COVID-19 Neural Net - David Guzmán</title>
 
 
 
@@ -29,7 +29,7 @@
 
 <meta property="og:locale" content="en-US">
 <meta property="og:site_name" content="David Guzmán">
-<meta property="og:title" content="Adaptive lanes">
+<meta property="og:title" content="COVID-19 Neural Net">
 
 
   <link rel="canonical" href="https://davidguzmanr.github.io/portfolio/portfolio-3/">
@@ -37,7 +37,7 @@
 
 
 
-  <meta property="og:description" content="Adaptive lanes for my social service in Data Science. ">
+  <meta property="og:description" content="Project for my Pattern Recognition class. ">
 
 
 
@@ -52,7 +52,7 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2021-10-07T21:53:28-07:00">
+  <meta property="article:published_time" content="2021-10-09T20:28:45-07:00">
 
 
 
@@ -251,21 +251,21 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Adaptive lanes">
-    <meta itemprop="description" content="Adaptive lanes for my social service in Data Science. ">
-    <meta itemprop="datePublished" content="October 07, 2021">
+    <meta itemprop="headline" content="COVID-19 Neural Net">
+    <meta itemprop="description" content="Project for my Pattern Recognition class. ">
+    <meta itemprop="datePublished" content="October 09, 2021">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 class="page__title" itemprop="headline">Adaptive lanes
+          <h1 class="page__title" itemprop="headline">COVID-19 Neural Net
 </h1>
           
         
         
         
-<!--          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2021-10-07T21:53:28-07:00">October 07, 2021</time></p>-->
+<!--          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2021-10-09T20:28:45-07:00">October 09, 2021</time></p>-->
         
         
              
@@ -275,17 +275,23 @@
       
 
       <section class="page__content" itemprop="text">
-        <p>Dealing with traffic congestion is one of the most difficult challenges for big cities. The use of reversible 
-lanes is a common strategy to improve traffic congestion during rush hours. A reversible lane is a lane that can 
-change its direction during a time interval to the more congested direction, like <a href="https://www.youtube.com/watch?v=IzAGqOfDANM&amp;ab_channel=PermaGrinFilms">this</a>.</p>
+        <p>A critical step in the fight against COVID-19 is effective detection of infected patients so that those 
+infected can receive immediate treatment and care, as well as being isolated to mitigate the spread of 
+the virus. The main detection method used to detect COVID-19 cases is the reverse transcriptase-polymerase 
+chain reaction (RT-PCR).</p>
 
-<p>Adaptive lanes can change their direction using real-time information to respond to traffic demand fluctuations.
-The original simulator is in <a href="https://github.com/volkhin/RoadTrafficSimulator">volkhin</a>, I am just making changes to it 
-for my needs, which are in my GitHub <a href="https://github.com/davidguzmanr/RoadTrafficSimulator">RoadTrafficSimulator</a>.
-Here is a <a href="https://davidguzmanr.github.io/files/RoadTrafficSimulator.html">demo</a>.</p>
+<p>An alternative detection method that has also been used for the detection of COVID-19 has been the radiography 
+examination, where radiologists take and analyze chest radiography images (for example, CXR chest radiograph or 
+CT scan) to look for visual indicators associated with COVID-19.</p>
 
-<p><img src="/images/lanes.gif" style="width:500px;height:260px;" class="center" /></p>
+<p>We used a pre-trained model called <a href="https://keras.io/api/applications/mobilenet/#mobilenetv2-function">MobileNetV2</a>
+and <em>data augmentation</em>, as the original dataset <a href="http://medicalsegmentation.com/covid19/">COVID-19 CT segmentation dataset
+</a> is very small. We also used <em>bagging</em> to see if we could improve the 
+performance of the model.</p>
 
+<p>The code with more explanations is in my GitHub <a href="https://github.com/davidguzmanr/Pattern-Recognition-COVID">Pattern-Recognition-COVID</a>.</p>
+
+<p><img src="/images/covid_training.gif" style="width:500px;height:260px;" class="center" /></p>
 
         
       </section>
@@ -318,11 +324,11 @@ Here is a <a href="https://davidguzmanr.github.io/files/RoadTrafficSimulator.htm
 
   <nav class="pagination">
     
-      <a href="https://davidguzmanr.github.io/portfolio/portfolio-2/" class="pagination--pager" title="COVID-19 Neural Net
+      <a href="https://davidguzmanr.github.io/portfolio/portfolio-2/" class="pagination--pager" title="SemEval 2021 Task 5: Toxic Spans Detection
 ">Previous</a>
     
     
-      <a href="https://davidguzmanr.github.io/portfolio/portfolio-4/" class="pagination--pager" title="Computational geometry
+      <a href="https://davidguzmanr.github.io/portfolio/portfolio-4/" class="pagination--pager" title="Adaptive lanes
 ">Next</a>
     
   </nav>

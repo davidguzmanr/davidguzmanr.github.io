@@ -19,7 +19,7 @@
 
 
 
-<title>SemEval 2021 Task 5: Toxic Spans Detection - David Guzmán</title>
+<title>EXIST-2021: sEXism Identification in Social neTworks - David Guzmán</title>
 
 
 
@@ -29,7 +29,7 @@
 
 <meta property="og:locale" content="en-US">
 <meta property="og:site_name" content="David Guzmán">
-<meta property="og:title" content="SemEval 2021 Task 5: Toxic Spans Detection">
+<meta property="og:title" content="EXIST-2021: sEXism Identification in Social neTworks">
 
 
   <link rel="canonical" href="https://davidguzmanr.github.io/portfolio/portfolio-1/">
@@ -37,7 +37,7 @@
 
 
 
-  <meta property="og:description" content="Project for my Natural Language Processing class. ">
+  <meta property="og:description" content="Project for my Data Mining class. ">
 
 
 
@@ -52,7 +52,7 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2021-10-07T21:53:28-07:00">
+  <meta property="article:published_time" content="2021-10-09T20:28:45-07:00">
 
 
 
@@ -251,21 +251,21 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="SemEval 2021 Task 5: Toxic Spans Detection">
-    <meta itemprop="description" content="Project for my Natural Language Processing class. ">
-    <meta itemprop="datePublished" content="October 07, 2021">
+    <meta itemprop="headline" content="EXIST-2021: sEXism Identification in Social neTworks">
+    <meta itemprop="description" content="Project for my Data Mining class. ">
+    <meta itemprop="datePublished" content="October 09, 2021">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 class="page__title" itemprop="headline">SemEval 2021 Task 5: Toxic Spans Detection
+          <h1 class="page__title" itemprop="headline">EXIST-2021: sEXism Identification in Social neTworks
 </h1>
           
         
         
         
-<!--          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2021-10-07T21:53:28-07:00">October 07, 2021</time></p>-->
+<!--          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2021-10-09T20:28:45-07:00">October 09, 2021</time></p>-->
         
         
              
@@ -275,17 +275,63 @@
       
 
       <section class="page__content" itemprop="text">
-        <p>Moderation is crucial to promoting healthy online discussions. Although several toxicity (abusive language) detection datasets and 
-models have been released, most of them classify whole comments or documents, and do not identify the spans that make a text toxic. 
-But highlighting such toxic spans can assist human moderators (e.g., news portals moderators) who often deal with lengthy comments, 
-and who prefer attribution instead of just a system-generated unexplained toxicity score per post. The evaluation of systems that could 
-accurately locate toxic spans within a text is thus a crucial step towards successful semi-automated moderation.</p>
+        <p>Detecting online sexism may be difficult, as it may be expressed in very different forms. The aim of this competition and 
+project is the detection of sexism in a broad sense, from explicit misogyny to other subtle expressions that involve implicit 
+sexist behaviours. The automatic identification of sexisms in a broad sense may help to create, design and determine the evolution 
+of new equality policies, as well as encourage better behaviors in society.</p>
 
-<p>We trained a LSTM to perform the tagging of the toxic spans. The F1 score of the LSTM in the evaluation dataset was 64.88, which was rather low. However, even the winners of this task just managed to get around 70, we believe the low scores are due to the fact the training dataset was poorly tagged. The page of the competition is <a href="https://competitions.codalab.org/competitions/25623#learn_the_details">here</a>.</p>
+<p>I applied fine-tuning to <a href="https://huggingface.co/bert-base-multilingual-uncased">bert-base-multilingual-uncased</a> to make the classification.
+I chose this model because the task contained text in English and Spanish. In the table below you can see the performance of my model, which is quite close to the winner of the shared task (see <a href="http://nlp.uned.es/exist2021/#results">EXIST-2021 results</a>).</p>
 
-<p>The code with more explanations is in my GitHub <a href="https://github.com/davidguzmanr/SemEval2021">SemEval2021</a>.</p>
+<style type="text/css">
+.tg  {border:none;border-collapse:collapse;border-color:#ccc;border-spacing:0;margin:0px auto;}
+.tg td{background-color:#fff;border-color:#ccc;border-style:solid;border-width:0px;color:#333;
+  font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{background-color:#f0f0f0;border-color:#ccc;border-style:solid;border-width:0px;color:#333;
+  font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-mxj2{background-color:#f9f9f9;border-color:inherit;font-style:italic;text-align:center;vertical-align:top}
+.tg .tg-yynm{background-color:#f0f0f0;border-color:#000000;color:#333333;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-7btt{border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-abip{background-color:#f9f9f9;border-color:inherit;text-align:center;vertical-align:top}
+</style>
 
-<p><img src="/images/semeval-app.gif" style="width:500px;height:260px;" class="center" /></p>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-yynm" rowspan="2">Model</th>
+    <th class="tg-7btt" colspan="2">Task 1: Sexism Identification</th>
+    <th class="tg-7btt" colspan="2">Task 2: Sexism Categorization</th>
+  </tr>
+  <tr>
+    <th class="tg-mxj2">Accuracy</th>
+    <th class="tg-mxj2">F1</th>
+    <th class="tg-mxj2">Accuracy</th>
+    <th class="tg-mxj2">F1</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-c3ow">AI-UPV (winner)</td>
+    <td class="tg-c3ow">0.7804</td>
+    <td class="tg-c3ow">0.7802</td>
+    <td class="tg-c3ow">0.6577</td>
+    <td class="tg-c3ow">0.5787</td>
+  </tr>
+  <tr>
+    <td class="tg-abip">My model</td>
+    <td class="tg-abip">0.7537</td>
+    <td class="tg-abip">0.7519</td>
+    <td class="tg-abip">0.6165</td>
+    <td class="tg-abip">0.5308</td>
+  </tr>
+</tbody>
+</table>
+<p><br /><br /></p>
+
+<p>The code with more explanations is in my GitHub <a href="https://github.com/davidguzmanr/EXIST2021">EXIST2021</a>.</p>
+
+<p><img src="/images/exist-2021.gif" class="center" /></p>
 
         
       </section>
@@ -321,7 +367,7 @@ accurately locate toxic spans within a text is thus a crucial step towards succe
       <a href="#" class="pagination--pager disabled">Previous</a>
     
     
-      <a href="https://davidguzmanr.github.io/portfolio/portfolio-2/" class="pagination--pager" title="COVID-19 Neural Net
+      <a href="https://davidguzmanr.github.io/portfolio/portfolio-2/" class="pagination--pager" title="SemEval 2021 Task 5: Toxic Spans Detection
 ">Next</a>
     
   </nav>
