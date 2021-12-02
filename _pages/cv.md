@@ -9,12 +9,18 @@ redirect_from:
 
 {% include base_path %}
 
-You can download a copy of my CV [here](../files/CV_David.pdf), I will try to update it as often as I can.
+You can download a copy of my CV [here](../files/CV_David_Guzman_EN.pdf), I will try to update it as often as I can.
 
 Education
 ======
 - BSc in *Physics*, UNAM, 2015-2020.
-- BSc in *Data Science*, UNAM, 2019-2021 (expected).
+- BSc in *Data Science*, UNAM, 2019-2021.
+
+Work experience
+======
+- **Data Scientist**, *Grupo Salinas*, Mexico City, Mexico (01/Nov/2021 - Present).
+  - Standardize the different databases used in the e-commerce area.
+  - Assist in the migration of the different databases and services related to e-commerce to AWS.
 
 Languages 
 =====
