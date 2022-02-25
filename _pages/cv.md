@@ -19,8 +19,8 @@ Education
 Work experience
 ======
 - **Data Scientist**, *Grupo Salinas*, Mexico City, Mexico (01/Nov/2021 - Present).
-  - Standardize the different databases used in the e-commerce area.
-  - Assist in the migration of the different databases and services related to e-commerce to AWS.
+  - Develop and improve the different recommendation systems used in the E-commerce area.
+  - Assist in the migration of the different databases and services related to E-commerce to AWS.
 
 Languages 
 =====
@@ -43,7 +43,7 @@ Computational skills
 - **Operating systems:** Unix/Linux (Ubuntu, Lubuntu, Fedora, Debian.
 - **Machine Learning tools:** Scikit-learn, PyCaret, PySpark MLlib.
 - **Deep Learning Tools:** Keras, TensorFlow, PyTorch.
-- **PLN tools:**  NLTK, spaCy, Hugging Face.
+- **NLP tools:**  NLTK, spaCy, Hugging Face.
 
 Interests
 =====
