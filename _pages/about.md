@@ -11,13 +11,14 @@ redirect_from:
 About me
 =====
 
-I am an undergrad student at [IIMAS, UNAM](https://www.iimas.unam.mx/) and currently I am finishing my BSc 
-in *[Data Science](https://cienciadatos.iimas.unam.mx/)*. I also have a BSc in *Physics* by 
-[Facultad de Ciencias, UNAM](http://www.fciencias.unam.mx/). 
+I have a BSc in *Physics* from [Facultad de Ciencias, UNAM](http://www.fciencias.unam.mx/) and a BSc in *Data Science* from
+[IIMAS, UNAM](https://www.iimas.unam.mx/). 
+
+I am currently at University of Toronto pursuing a [Master of Science in Applied Computing](https://mscac.utoronto.ca/).
 
 My main interests right now are:
 
-- Data Science.
 - Machine Learning.
 - Deep Learning.
 - Computational Linguistics and NLP.
+- Data Science.
