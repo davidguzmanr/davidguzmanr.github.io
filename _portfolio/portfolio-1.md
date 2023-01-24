@@ -1,6 +1,6 @@
 ---
 title: "Cross-Domain Transferability of Adversarial Examples in NLP"
-excerpt: "Final project for my *Trustworthy Machine Learning*"
+excerpt: "Final project for my *Trustworthy Machine Learning* course"
 collection: portfolio
 ---
 Existing attacks rely directly or indirectly on the source training data, which hampers their transferability to other domains. Previous work in Computer Vision [1]  has explored the idea of the transferability of adversarial examples across domains with compelling results that demonstrated such domain invariant adversaries. In this work we explore this idea in NLP by exploring different domain and task settings and looking at how adversarial examples transfer across them. To the best of our knowledge, the work closest to ours is [2], which only explores the **similar domain, same task setting**.

@@ -1,6 +1,6 @@
 ---
 title: "EXIST-2021: sEXism Identification in Social neTworks"
-excerpt: "Project for my *Text Mining* class. 
+excerpt: "Project for my *Text Mining* course. 
 <br/><img src='/images/exist-2021.gif' style='width:500px;height:200px;' class='center'>"
 collection: portfolio
 ---

@@ -1,6 +1,6 @@
 ---
 title: "SemEval 2021 Task 5: Toxic Spans Detection"
-excerpt: "Project for my *Natural Language Processing* class. 
+excerpt: "Project for my *Natural Language Processing* course. 
 <br/><img src='/images/semeval-app.gif' style='width:500px;height:200px;' class='center'>"
 collection: portfolio
 ---

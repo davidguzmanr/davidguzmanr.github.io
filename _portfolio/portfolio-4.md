@@ -1,6 +1,6 @@
 ---
 title: "COVID-19 Neural Net"
-excerpt: "Project for my *Pattern Recognition* class. 
+excerpt: "Project for my *Pattern Recognition* course. 
 <br/><img src='/images/covid_training.gif' style='width:500px;height:260px;'>"
 collection: portfolio
 ---
@@ -14,7 +14,7 @@ An alternative detection method that has also been used for the detection of COV
 examination, where radiologists take and analyze chest radiography images (for example, CXR chest radiograph or 
 CT scan) to look for visual indicators associated with COVID-19.
 
-We used a pre-trained model called [MobileNetV2](https://keras.io/api/applications/mobilenet/#mobilenetv2-function)
+We used a pre-trained [MobileNetV2](https://keras.io/api/applications/mobilenet/#mobilenetv2-function)
 and *data augmentation*, as the original dataset [COVID-19 CT segmentation dataset
 ](http://medicalsegmentation.com/covid19/) is very small. We also used *bagging* to see if we could improve the 
 performance of the model. 
