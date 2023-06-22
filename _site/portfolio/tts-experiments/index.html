@@ -19,7 +19,7 @@
 
 
 
-<title>Dynamics of black holes - David Guzmán</title>
+<title>Speech Generation for Indigenous Language Education &amp; the EveryVoice TTS Toolkit - David Guzmán</title>
 
 
 
@@ -29,15 +29,15 @@
 
 <meta property="og:locale" content="en-US">
 <meta property="og:site_name" content="David Guzmán">
-<meta property="og:title" content="Dynamics of black holes">
+<meta property="og:title" content="Speech Generation for Indigenous Language Education &amp; the EveryVoice TTS Toolkit">
 
 
-  <link rel="canonical" href="https://davidguzmanr.github.io/portfolio/portfolio-6/">
-  <meta property="og:url" content="https://davidguzmanr.github.io/portfolio/portfolio-6/">
+  <link rel="canonical" href="https://davidguzmanr.github.io/portfolio/tts-experiments/">
+  <meta property="og:url" content="https://davidguzmanr.github.io/portfolio/tts-experiments/">
 
 
 
-  <meta property="og:description" content="Dynamics of black holes for my social service in Physics. ">
+  <meta property="og:description" content="TTS experiments with different settings">
 
 
 
@@ -181,15 +181,15 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Dynamics of black holes">
-    <meta itemprop="description" content="Dynamics of black holes for my social service in Physics. ">
+    <meta itemprop="headline" content="Speech Generation for Indigenous Language Education &amp; the EveryVoice TTS Toolkit">
+    <meta itemprop="description" content="TTS experiments with different settings">
     <meta itemprop="datePublished" content="June 22, 2023">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 class="page__title" itemprop="headline">Dynamics of black holes
+          <h1 class="page__title" itemprop="headline">Speech Generation for Indigenous Language Education &amp; the EveryVoice TTS Toolkit
 </h1>
           
         
@@ -205,8 +205,158 @@
       
 
       <section class="page__content" itemprop="text">
-        <p>Notes and code about black hole shadows. There are some (actually a lot) changes I still have to implement. 
-The code is in <a href="https://github.com/davidguzmanr/Servicio">Black-Holes</a>.</p>
+        <p><br /></p>
+
+<h1 id="fastspeech2--hifi-gan-base">FastSpeech2 + HiFi-GAN base</h1>
+
+<table>
+  <tbody>
+    <tr>
+      <th style="text-align: center">5741.wav (Ground-Truth) </th>
+      <th style="text-align: center">5741.wav (Synthesized) </th>
+    </tr>
+    <tr>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/ground-truth/5741.wav" autoplay="" />
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/HiFiGAN/base/5741.wav" autoplay="" />
+        </audio></td>
+    </tr>
+  </tbody>
+</table>
+<div>
+  <b>Text:</b> 
+  <em>
+  Pero la vergüenza no me impidió tomar una resolución.
+  </em>
+</div>
+<p><br /></p>
+
+<table>
+  <tbody>
+    <tr>
+      <th style="text-align: center">6941.wav (Ground-Truth) </th>
+      <th style="text-align: center">6941.wav (Synthesized) </th>
+    </tr>
+    <tr>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/ground-truth/6941.wav" autoplay="" />
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/HiFiGAN/base/6941.wav" autoplay="" />
+        </audio></td>
+    </tr>
+  </tbody>
+</table>
+<div>
+  <b>Text:</b> 
+  <em>
+  Se proponía presentarse a Don Carlos y retarle a desafío para decidir en juicio de Dios, peleando con toda lealtad, la grave cuestión que motivaba la guerra.
+  </em>
+</div>
+<p><br /></p>
+
+<table>
+  <tbody>
+    <tr>
+      <th style="text-align: center">9603.wav (Ground-Truth) </th>
+      <th style="text-align: center">9603.wav (Synthesized) </th>
+    </tr>
+    <tr>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/ground-truth/9603.wav" autoplay="" />
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/HiFiGAN/base/9603.wav" autoplay="" />
+        </audio></td>
+    </tr>
+  </tbody>
+</table>
+<div>
+  <b>Text:</b> 
+  <em>
+  Era un día de Marzo de esos que parecen días de Junio, privilegio de la corte de las Españas, que suele abrasarse en Febrero y helarse en Mayo.
+  </em>
+</div>
+<p><br /></p>
+
+<h1 id="fastspeech2--hifi-gan-finetuned">FastSpeech2 + HiFi-GAN finetuned</h1>
+
+<table>
+  <tbody>
+    <tr>
+      <th style="text-align: center">5741.wav (Ground-Truth) </th>
+      <th style="text-align: center">5741.wav (Synthesized) </th>
+    </tr>
+    <tr>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/ground-truth/5741.wav" autoplay="" />
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/HiFiGAN/finetuned/5741.wav" autoplay="" />
+        </audio></td>
+    </tr>
+  </tbody>
+</table>
+<div>
+  <b>Text:</b> 
+  <em>
+  Pero la vergüenza no me impidió tomar una resolución.
+  </em>
+</div>
+<p><br /></p>
+
+<table>
+  <tbody>
+    <tr>
+      <th style="text-align: center">6941.wav (Ground-Truth) </th>
+      <th style="text-align: center">6941.wav (Synthesized) </th>
+    </tr>
+    <tr>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/ground-truth/6941.wav" autoplay="" />
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/HiFiGAN/finetuned/6941.wav" autoplay="" />
+        </audio></td>
+    </tr>
+  </tbody>
+</table>
+<div>
+  <b>Text:</b> 
+  <em>
+  Se proponía presentarse a Don Carlos y retarle a desafío para decidir en juicio de Dios, peleando con toda lealtad, la grave cuestión que motivaba la guerra.
+  </em>
+</div>
+<p><br /></p>
+
+<table>
+  <tbody>
+    <tr>
+      <th style="text-align: center">9603.wav (Ground-Truth) </th>
+      <th style="text-align: center">9603.wav (Synthesized) </th>
+    </tr>
+    <tr>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/ground-truth/9603.wav" autoplay="" />
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/HiFiGAN/finetuned/9603.wav" autoplay="" />
+        </audio></td>
+    </tr>
+  </tbody>
+</table>
+<div>
+  <b>Text:</b> 
+  <em>
+  Era un día de Marzo de esos que parecen días de Junio, privilegio de la corte de las Españas, que suele abrasarse en Febrero y helarse en Mayo.
+  </em>
+</div>
+<p><br /></p>
+
+<h1 id="acknowledgement">Acknowledgement</h1>
+<p>The synthetic speech samples were constructed using a <a href="https://discourse.mozilla.org/t/sharing-my-100h-of-single-speaker-spanish/45288">Spanish speaker dataset</a> with the LJSpeech format collected and validated by <a href="https://github.com/carlfm01">Carlos Fonseca</a>.</p>
 
         
       </section>
@@ -227,12 +377,11 @@ The code is in <a href="https://github.com/davidguzmanr/Servicio">Black-Holes</a
 
   <nav class="pagination">
     
-      <a href="https://davidguzmanr.github.io/portfolio/portfolio-5/" class="pagination--pager" title="Adaptive lanes
+      <a href="https://davidguzmanr.github.io/portfolio/portfolio-7/" class="pagination--pager" title="Computational geometry
 ">Previous</a>
     
     
-      <a href="https://davidguzmanr.github.io/portfolio/portfolio-7/" class="pagination--pager" title="Computational geometry
-">Next</a>
+      <a href="#" class="pagination--pager disabled">Next</a>
     
   </nav>
 
