@@ -3,6 +3,7 @@ title: "EXIST-2021: sEXism Identification in Social neTworks"
 excerpt: "Project for my *Text Mining* course. 
 <br/><img src='/images/exist-2021.gif' style='width:500px;height:200px;' class='center'>"
 collection: portfolio
+permalink: /portfolio/exist-2021/
 ---
 Detecting online sexism may be difficult, as it may be expressed in very different forms. The aim of this competition and 
 project is the detection of sexism in a broad sense, from explicit misogyny to other subtle expressions that involve implicit 

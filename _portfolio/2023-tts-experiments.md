@@ -2,6 +2,7 @@
 title: "Speech Generation for Indigenous Language Education & the EveryVoice TTS Toolkit"
 excerpt: "TTS experiments with different settings"
 collection: portfolio
+permalink: /portfolio/tts-experiments/
 ---
 <br>
 

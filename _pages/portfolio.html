@@ -5,11 +5,8 @@ permalink: /portfolio/
 author_profile: true
 ---
 
-Some projects that I did during my <i>Physics</i> and <i>Data Science</i> degrees.
-
 {% include base_path %}
 
-{% for post in site.portfolio %}
+{% for post in site.portfolio reversed %}
   {% include archive-single.html %}
 {% endfor %}
-

@@ -3,6 +3,7 @@ title: "SemEval 2021 Task 5: Toxic Spans Detection"
 excerpt: "Project for my *Natural Language Processing* course. 
 <br/><img src='/images/semeval-app.gif' style='width:500px;height:200px;' class='center'>"
 collection: portfolio
+permalink: /portfolio/semeval-2021/
 ---
 
 Moderation is crucial to promoting healthy online discussions. Although several toxicity (abusive language) detection datasets and 

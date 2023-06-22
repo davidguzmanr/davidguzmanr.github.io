@@ -3,6 +3,7 @@ title: "COVID-19 Neural Net"
 excerpt: "Project for my *Pattern Recognition* course. 
 <br/><img src='/images/covid_training.gif' style='width:500px;height:260px;'>"
 collection: portfolio
+permalink: /portfolio/covid-neural-net/
 ---
 
 A critical step in the fight against COVID-19 is effective detection of infected patients so that those 
