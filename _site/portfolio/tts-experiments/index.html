@@ -52,7 +52,7 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2023-06-23T09:34:45-07:00">
+  <meta property="article:published_time" content="2023-07-13T16:10:09-07:00">
 
 
 
@@ -183,7 +183,7 @@
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
     <meta itemprop="headline" content="Speech Generation for Indigenous Language Education &amp; the EveryVoice TTS Toolkit">
     <meta itemprop="description" content="TTS experiments with different settings">
-    <meta itemprop="datePublished" content="June 23, 2023">
+    <meta itemprop="datePublished" content="July 13, 2023">
     
 
     <div class="page__inner-wrap">
@@ -195,7 +195,7 @@
         
         
         
-<!--          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2023-06-23T09:34:45-07:00">June 23, 2023</time></p>-->
+<!--          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2023-07-13T16:10:09-07:00">July 13, 2023</time></p>-->
         
         
              
@@ -207,7 +207,21 @@
       <section class="page__content" itemprop="text">
         <p><br /></p>
 
-<h1 id="fastspeech2--hifi-gan-base">FastSpeech2 + HiFi-GAN base</h1>
+<ul>
+  <li><a href="#vocoders">Vocoders</a>
+    <ul>
+      <li><a href="#hifi-gan-base">FastSpeech2 + HiFi-GAN base</a></li>
+      <li><a href="#hifi-gan-finetuned">FastSpeech2 + HiFi-GAN finetuned</a></li>
+      <li><a href="#bigvgan-base">FastSpeech2 + BigVGAN base</a></li>
+      <li><a href="#bigvgan-finetuned">FastSpeech2 + BigVGAN finetuned</a></li>
+    </ul>
+  </li>
+  <li><a href="#ensemble">Ensemble</a></li>
+</ul>
+
+<h1 id="vocoders">Vocoders</h1>
+
+<h2 id="hifi-gan-base">FastSpeech2 + HiFi-GAN base</h2>
 
 <table>
   <tbody>
@@ -281,7 +295,7 @@
 </div>
 <p><br /></p>
 
-<h1 id="fastspeech2--hifi-gan-finetuned">FastSpeech2 + HiFi-GAN finetuned</h1>
+<h2 id="hifi-gan-finetuned">FastSpeech2 + HiFi-GAN finetuned</h2>
 
 <table>
   <tbody>
@@ -355,7 +369,7 @@
 </div>
 <p><br /></p>
 
-<h1 id="fastspeech2--bigvgan-base">FastSpeech2 + BigVGAN base</h1>
+<h2 id="bigvgan-base">FastSpeech2 + BigVGAN base</h2>
 
 <table>
   <tbody>
@@ -429,7 +443,7 @@
 </div>
 <p><br /></p>
 
-<h1 id="fastspeech2--bigvgan-finetuned">FastSpeech2 + BigVGAN finetuned</h1>
+<h2 id="bigvgan-finetuned">FastSpeech2 + BigVGAN finetuned</h2>
 
 <table>
   <tbody>
@@ -503,7 +517,297 @@
 </div>
 <p><br /></p>
 
+<h1 id="ensemble">Ensemble</h1>
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
+.tg td{border-bottom-width:1px;border-color:black;border-style:solid;border-top-width:1px;border-width:0px;
+  font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-bottom-width:1px;border-color:black;border-style:solid;border-top-width:1px;border-width:0px;
+  font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+.tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+
+<table class="tg" style="width:70%">
+<thead>
+  <tr>
+    <th class="tg-amwm">Speaker ID</th>
+    <th class="tg-amwm">ES</th>
+    <th class="tg-amwm">EN</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-baqh">Training (unique utterances):</td>
+    <td class="tg-baqh"></td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">Speaker-Dependent</td>
+    <td class="tg-baqh">541</td>
+    <td class="tg-baqh">13100</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">Sampling 1st</td>
+    <td class="tg-baqh">541</td>
+    <td class="tg-baqh">4112</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">Sampling 2nd</td>
+    <td class="tg-baqh">541</td>
+    <td class="tg-baqh">4174</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">Sampling 3rd</td>
+    <td class="tg-baqh">541</td>
+    <td class="tg-baqh">4142</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">Ensemble (Sampling 1+2+3)</td>
+    <td class="tg-baqh">541</td>
+    <td class="tg-baqh">8921</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">Testing</td>
+    <td class="tg-baqh">100</td>
+    <td class="tg-baqh">100</td>
+  </tr>
+</tbody>
+</table>
+<p><br /></p>
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
+.tg td{border-bottom-width:1px;border-color:black;border-style:solid;border-top-width:1px;border-width:0px;
+  font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-bottom-width:1px;border-color:black;border-style:solid;border-top-width:1px;border-width:0px;
+  font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+.tg .tg-fpwh{background-color:#81FF81;border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-7btt{border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
+</style>
+
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-c3ow"></th>
+    <th class="tg-7btt" colspan="3">HiFi-GAN (universal)</th>
+    <th class="tg-7btt" colspan="3">HiFi-GAN (finetuned)</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-c3ow"></td>
+    <td class="tg-7btt">English</td>
+    <td class="tg-7btt">Spanish</td>
+    <td class="tg-amwm">Sample</td>
+    <td class="tg-7btt">English</td>
+    <td class="tg-7btt">Spanish</td>
+    <td class="tg-amwm">Sample</td>
+  </tr>
+  <tr>
+    <td class="tg-7btt">SD-30-minutes<br />(speaker dependant)</td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-c3ow">7.476</td>
+    <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan/9900-30-minutes.wav" autoplay="" /></audio></td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-c3ow">7.791</td>
+    <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan-finetuned/9900-30-minutes.wav" autoplay="" /></audio></td>
+  </tr>
+  <tr>
+    <td class="tg-7btt">SD-5-hours<br />(speaker dependant)</td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-c3ow">7.286</td>
+    <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan/9900-5-hours.wav" autoplay="" /></audio></td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-c3ow">7.631</td>
+    <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan-finetuned/9900-5-hours.wav" autoplay="" /></audio></td>
+  </tr>
+  <tr>
+    <td class="tg-7btt">MU<br />(multi-speaker/language)</td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-c3ow">8.467</td>
+    <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan/9900-test-en-es-low.wav" autoplay="" /></audio></td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-c3ow">8.625</td>
+    <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan-finetuned/9900-test-en-es-low.wav" autoplay="" /></audio></td>
+  </tr>
+  <tr>
+    <td class="tg-7btt">OV<br />(oversampling)</td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-c3ow">7.677</td>
+    <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan/9900-test-en-es-low-augmentation.wav" autoplay="" /></audio></td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-c3ow">7.946</td>
+    <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan-finetuned/9900-test-en-es-low.wav" autoplay="" /></audio></td>
+  </tr>
+  <tr>
+    <td class="tg-7btt">E1 (multi-speaker/language <br />with resampled corpora)</td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-c3ow">7.698</td>
+    <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan/9900-test-ensemble-1.wav" autoplay="" /></audio></td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-c3ow">8.063</td>
+    <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan-finetuned/9900-test-ensemble-1.wav" autoplay="" /></audio></td>
+  </tr>
+  <tr>
+    <td class="tg-7btt">E2 (multi-speaker/language <br />with resampled corpora)</td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-c3ow">7.834</td>
+    <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan/9900-test-ensemble-2.wav" autoplay="" /></audio></td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-c3ow">8.093</td>
+    <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan-finetuned/9900-test-ensemble-2.wav" autoplay="" /></audio></td>
+  </tr>
+  <tr>
+    <td class="tg-7btt">E3 (multi-speaker/language <br />with resampled corpora)</td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-c3ow">7.791</td>
+    <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan/9900-test-ensemble-3.wav" autoplay="" /></audio></td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-c3ow">8.073</td>
+    <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan-finetuned/9900-test-ensemble-3.wav" autoplay="" /></audio></td>
+  </tr>
+  <tr>
+    <td class="tg-7btt">EN<br />(ensemble model)</td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-fpwh">7.393</td>
+    <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan/9900-test-ensemble.wav" autoplay="" /></audio></td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-fpwh">7.680</td>
+    <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan/9900-test-ensemble.wav" autoplay="" /></audio></td>
+  </tr>
+</tbody>
+</table>
+<div>
+  <center>
+  <em>
+  Mel-ceptral distortion (smaller is better).
+  </em>
+  </center>
+</div>
+<p><br /></p>
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
+.tg td{border-bottom-width:1px;border-color:black;border-style:solid;border-top-width:1px;border-width:0px;
+  font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-bottom-width:1px;border-color:black;border-style:solid;border-top-width:1px;border-width:0px;
+  font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+.tg .tg-fpwh{background-color:#81FF81;border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-7btt{border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
+</style>
+
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-c3ow"></th>
+    <th class="tg-7btt" colspan="3">HiFi-GAN (universal)</th>
+    <th class="tg-7btt" colspan="3">HiFi-GAN (finetuned)</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-c3ow"></td>
+    <td class="tg-7btt">English</td>
+    <td class="tg-7btt">Spanish</td>
+    <td class="tg-amwm">Sample</td>
+    <td class="tg-7btt">English</td>
+    <td class="tg-7btt">Spanish</td>
+    <td class="tg-amwm">Sample</td>
+  </tr>
+  <tr>
+    <td class="tg-7btt">SD-30-minutes<br />(speaker dependant)</td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-c3ow">0.287</td>
+    <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan/9436-30-minutes.wav" autoplay="" /></audio></td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-c3ow">0.286</td>
+    <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan-finetuned/9436-30-minutes.wav" autoplay="" /></audio></td>
+  </tr>
+  <tr>
+    <td class="tg-7btt">SD-5-hours<br />(speaker dependant)</td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-c3ow">0.328</td>
+    <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan/9436-5-hours.wav" autoplay="" /></audio></td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-c3ow">0.336</td>
+    <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan-finetuned/9436-5-hours.wav" autoplay="" /></audio></td>
+  </tr>
+  <tr>
+    <td class="tg-7btt">MU<br />(multi-speaker/language)</td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-c3ow">0.316</td>
+    <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan/9436-test-en-es-low.wav" autoplay="" /></audio></td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-c3ow">0.308</td>
+    <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan-finetuned/9436-test-en-es-low.wav" autoplay="" /></audio></td>
+  </tr>
+  <tr>
+    <td class="tg-7btt">OV<br />(oversampling)</td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-c3ow">0.312</td>
+    <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan/9436-test-en-es-low-augmentation.wav" autoplay="" /></audio></td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-c3ow">0.320</td>
+    <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan-finetuned/9436-test-en-es-low.wav" autoplay="" /></audio></td>
+  </tr>
+  <tr>
+    <td class="tg-7btt">E1 (multi-speaker/language <br />with resampled corpora)</td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-c3ow">0.306</td>
+    <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan/9436-test-ensemble-1.wav" autoplay="" /></audio></td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-c3ow">0.289</td>
+    <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan-finetuned/9436-test-ensemble-1.wav" autoplay="" /></audio></td>
+  </tr>
+  <tr>
+    <td class="tg-7btt">E2 (multi-speaker/language <br />with resampled corpora)</td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-c3ow">0.324</td>
+    <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan/9436-test-ensemble-2.wav" autoplay="" /></audio></td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-c3ow">0.312</td>
+    <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan-finetuned/9436-test-ensemble-2.wav" autoplay="" /></audio></td>
+  </tr>
+  <tr>
+    <td class="tg-7btt">E3 (multi-speaker/language <br />with resampled corpora)</td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-c3ow">0.295</td>
+    <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan/9436-test-ensemble-3.wav" autoplay="" /></audio></td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-c3ow">0.301</td>
+    <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan-finetuned/9436-test-ensemble-3.wav" autoplay="" /></audio></td>
+  </tr>
+  <tr>
+    <td class="tg-7btt">EN<br />(ensemble model)</td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-fpwh">0.326</td>
+    <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan/9436-test-ensemble.wav" autoplay="" /></audio></td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-fpwh">0.325</td>
+    <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan/9436-test-ensemble.wav" autoplay="" /></audio></td>
+  </tr>
+</tbody>
+</table>
+<div>
+  <center>
+  <em>
+  F0 correlation (bigger is better).
+  </em>
+  </center>
+</div>
+<p><br /></p>
+
 <h1 id="acknowledgement">Acknowledgement</h1>
+
 <p>The synthetic speech samples were constructed using a <a href="https://discourse.mozilla.org/t/sharing-my-100h-of-single-speaker-spanish/45288">Spanish speaker dataset</a> with the LJSpeech format collected and validated by <a href="https://github.com/carlfm01">Carlos Fonseca</a>.</p>
 
         
