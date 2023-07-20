@@ -472,7 +472,7 @@ permalink: /portfolio/tts-experiments/
     <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan/9900-test-ensemble.wav" autoplay=""></audio></td>
     <td class="tg-c3ow">-</td>
     <td class="tg-fpwh">7.592</td>
-    <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan/9900-test-ensemble.wav" autoplay=""></audio></td>
+    <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan-finetuned/9900-test-ensemble.wav" autoplay=""></audio></td>
   </tr>
   <tr>
     <td class="tg-7btt">EN<br>(ensemble model weighted)</td>
@@ -481,7 +481,7 @@ permalink: /portfolio/tts-experiments/
     <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan/9900-test-ensemble-weighted.wav" autoplay=""></audio></td>
     <td class="tg-c3ow">-</td>
     <td class="tg-c3ow">7.695</td>
-    <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan/9900-test-ensemble-weighted.wav" autoplay=""></audio></td>
+    <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan-finetuned/9900-test-ensemble-weighted.wav" autoplay=""></audio></td>
   </tr>
 </tbody>
 </table>
@@ -594,7 +594,7 @@ permalink: /portfolio/tts-experiments/
     <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan/9436-test-ensemble.wav" autoplay=""></audio></td>
     <td class="tg-c3ow">-</td>
     <td class="tg-c3ow">0.303</td>
-    <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan/9436-test-ensemble.wav" autoplay=""></audio></td>
+    <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan-finetuned/9436-test-ensemble.wav" autoplay=""></audio></td>
   </tr>
   <tr>
     <td class="tg-7btt">EN<br>(ensemble model weighted)</td>
@@ -603,7 +603,7 @@ permalink: /portfolio/tts-experiments/
     <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan/9436-test-ensemble-weighted.wav" autoplay=""></audio></td>
     <td class="tg-c3ow">-</td>
     <td class="tg-fpwh">0.312</td>
-    <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan/9436-test-ensemble-weighted.wav" autoplay=""></audio></td>
+    <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan-finetuned/9436-test-ensemble-weighted.wav" autoplay=""></audio></td>
   </tr>
 </tbody>
 </table>
