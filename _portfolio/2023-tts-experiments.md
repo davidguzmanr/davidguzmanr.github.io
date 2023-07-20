@@ -459,19 +459,19 @@ permalink: /portfolio/tts-experiments/
   <tr>
     <td class="tg-7btt">E3 (multi-speaker/language <br>with resampled corpora)</td>
     <td class="tg-c3ow">-</td>
-    <td class="tg-c3ow">7.791</td>
+    <td class="tg-c3ow">7.745</td>
     <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan/9900-test-ensemble-3.wav" autoplay=""></audio></td>
     <td class="tg-c3ow">-</td>
-    <td class="tg-c3ow">8.073</td>
+    <td class="tg-c3ow">8.081</td>
     <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan-finetuned/9900-test-ensemble-3.wav" autoplay=""></audio></td>
   </tr>
   <tr>
     <td class="tg-7btt">EN<br>(ensemble model)</td>
     <td class="tg-c3ow">-</td>
-    <td class="tg-fpwh">7.393</td>
+    <td class="tg-fpwh">7.289</td>
     <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan/9900-test-ensemble.wav" autoplay=""></audio></td>
     <td class="tg-c3ow">-</td>
-    <td class="tg-fpwh">7.680</td>
+    <td class="tg-fpwh">7.592</td>
     <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan/9900-test-ensemble.wav" autoplay=""></audio></td>
   </tr>
 </tbody>
@@ -572,19 +572,19 @@ permalink: /portfolio/tts-experiments/
   <tr>
     <td class="tg-7btt">E3 (multi-speaker/language <br>with resampled corpora)</td>
     <td class="tg-c3ow">-</td>
-    <td class="tg-c3ow">0.295</td>
+    <td class="tg-c3ow">0.308</td>
     <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan/9436-test-ensemble-3.wav" autoplay=""></audio></td>
     <td class="tg-c3ow">-</td>
-    <td class="tg-c3ow">0.301</td>
+    <td class="tg-c3ow">0.299</td>
     <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan-finetuned/9436-test-ensemble-3.wav" autoplay=""></audio></td>
   </tr>
   <tr>
     <td class="tg-7btt">EN<br>(ensemble model)</td>
     <td class="tg-c3ow">-</td>
-    <td class="tg-fpwh">0.326</td>
+    <td class="tg-fpwh">0.344</td>
     <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan/9436-test-ensemble.wav" autoplay=""></audio></td>
     <td class="tg-c3ow">-</td>
-    <td class="tg-fpwh">0.325</td>
+    <td class="tg-fpwh">0.303</td>
     <td class="tg-baqh"><audio controls="controls"><source src="/files/audios/ensemble/hifigan/9436-test-ensemble.wav" autoplay=""></audio></td>
   </tr>
 </tbody>
