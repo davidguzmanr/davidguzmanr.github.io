@@ -13,6 +13,9 @@ permalink: /portfolio/tts-experiments/
   - [FastSpeech2 + BigVGAN base](#bigvgan-base)
   - [FastSpeech2 + BigVGAN finetuned](#bigvgan-finetuned)
 - [Ensemble](#ensemble)
+- [SeamlessM4T](#seamlessm4t)
+  - [SeamlessM4T-large](#seamlessm4t-large)
+  - [SeamlessM4T-large finetuned](#seamlessm4t-large-finetuned)
 
 # Vocoders
 
@@ -613,6 +616,300 @@ permalink: /portfolio/tts-experiments/
   F0 correlation (bigger is better).
   </em>
   </center>
+</div>
+<br>
+
+# SeamlessM4T
+
+## SeamlessM4T-large {#seamlessm4t-large}
+
+<table>
+  <tbody>
+    <tr>
+      <th style="text-align: center">English </th>
+      <th style="text-align: center">Spanish </th>
+      <th style="text-align: center">French </th>
+    </tr>
+    <tr>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/SeamlessM4T/seamlessM4T_large/eng/0.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/SeamlessM4T/seamlessM4T_large/spa/0.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/SeamlessM4T/seamlessM4T_large/fra/0.wav" autoplay="">
+        </audio></td>
+    </tr>
+  </tbody>
+</table>
+<div>
+  <b>Text (eng):</b> 
+  <em>
+  The quick brown fox jumps over the lazy dog.
+  </em> <br>
+  <b>Text (spa):</b> 
+  <em>
+  El zorro marrón rápido salta sobre el perro perezoso.
+  </em> <br>
+  <b>Text (fra):</b> 
+  <em>
+  Le renard brun rapide saute sur le chien paresseux.
+  </em>
+</div>
+<br>
+
+<table>
+  <tbody>
+    <tr>
+      <th style="text-align: center">English </th>
+      <th style="text-align: center">Spanish </th>
+      <th style="text-align: center">French </th>
+    </tr>
+    <tr>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/SeamlessM4T/seamlessM4T_large/eng/1.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/SeamlessM4T/seamlessM4T_large/spa/1.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/SeamlessM4T/seamlessM4T_large/fra/1.wav" autoplay="">
+        </audio></td>
+    </tr>
+  </tbody>
+</table>
+<div>
+  <b>Text (eng):</b> 
+  <em>
+  The earliest book printed with movable types, the Gutenberg, or forty-two line Bible of about 1455
+  </em> <br>
+  <b>Text (spa):</b> 
+  <em>
+  El primer libro impreso con tipos móviles, la Gutenberg, o Biblia de cuarenta y dos líneas de alrededor de 1455
+  </em> <br>
+  <b>Text (fra):</b> 
+  <em>
+  Le premier livre imprimé avec des caractères mobiles, la Bible de Gutenberg, ou Bible de quarante-deux lignes, datant d'environ 1455
+  </em>
+</div>
+<br>
+
+<table>
+  <tbody>
+    <tr>
+      <th style="text-align: center">English </th>
+      <th style="text-align: center">Spanish </th>
+      <th style="text-align: center">French </th>
+    </tr>
+    <tr>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/SeamlessM4T/seamlessM4T_large/eng/2.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/SeamlessM4T/seamlessM4T_large/spa/2.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/SeamlessM4T/seamlessM4T_large/fra/2.wav" autoplay="">
+        </audio></td>
+    </tr>
+  </tbody>
+</table>
+<div>
+  <b>Text (eng):</b> 
+  <em>
+  The Middle Ages brought calligraphy to perfection, and it was natural therefore
+  </em> <br>
+  <b>Text (spa):</b> 
+  <em>
+  La Edad Media trajo la caligrafía a la perfección, y por lo tanto era natural
+  </em> <br>
+  <b>Text (fra):</b> 
+  <em>
+  Le Moyen Âge a apporté la calligraphie à la perfection, et il était donc naturel
+  </em>
+</div>
+<br>
+
+<table>
+  <tbody>
+    <tr>
+      <th style="text-align: center">English </th>
+      <th style="text-align: center">Spanish </th>
+      <th style="text-align: center">French </th>
+    </tr>
+    <tr>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/SeamlessM4T/seamlessM4T_large/eng/3.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/SeamlessM4T/seamlessM4T_large/spa/3.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/SeamlessM4T/seamlessM4T_large/fra/3.wav" autoplay="">
+        </audio></td>
+    </tr>
+  </tbody>
+</table>
+<div>
+  <b>Text (eng):</b> 
+  <em>
+  The earliest book printed with movable type, the aforesaid Gutenberg Bible, is printed in letters which are an exact imitation
+  </em> <br>
+  <b>Text (spa):</b> 
+  <em>
+  El primer libro impreso con tipos móviles, la mencionada Biblia de Gutenberg, está impreso en letras que son una imitación exacta
+  </em> <br>
+  <b>Text (fra):</b> 
+  <em>
+  Le premier livre imprimé avec des caractères mobiles, la Bible de Gutenberg susmentionnée, est imprimé en lettres qui sont une imitation exacte
+  </em>
+</div>
+<br>
+
+## SeamlessM4T-large finetuned (eng-spa data) {#seamlessm4t-large-finetuned}
+
+<table>
+  <tbody>
+    <tr>
+      <th style="text-align: center">English </th>
+      <th style="text-align: center">Spanish </th>
+      <th style="text-align: center">French </th>
+    </tr>
+    <tr>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/SeamlessM4T/seamlessM4T_large_finetuned_spa/eng/0.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/SeamlessM4T/seamlessM4T_large_finetuned_spa/spa/0.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/SeamlessM4T/seamlessM4T_large_finetuned_spa/fra/0.wav" autoplay="">
+        </audio></td>
+    </tr>
+  </tbody>
+</table>
+<div>
+  <b>Text (eng):</b> 
+  <em>
+  The quick brown fox jumps over the lazy dog.
+  </em> <br>
+  <b>Text (spa):</b> 
+  <em>
+  El zorro marrón rápido salta sobre el perro perezoso.
+  </em> <br>
+  <b>Text (fra):</b> 
+  <em>
+  Le renard brun rapide saute sur le chien paresseux.
+  </em>
+</div>
+<br>
+
+<table>
+  <tbody>
+    <tr>
+      <th style="text-align: center">English </th>
+      <th style="text-align: center">Spanish </th>
+      <th style="text-align: center">French </th>
+    </tr>
+    <tr>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/SeamlessM4T/seamlessM4T_large_finetuned_spa/eng/1.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/SeamlessM4T/seamlessM4T_large_finetuned_spa/spa/1.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/SeamlessM4T/seamlessM4T_large_finetuned_spa/fra/1.wav" autoplay="">
+        </audio></td>
+    </tr>
+  </tbody>
+</table>
+<div>
+  <b>Text (eng):</b> 
+  <em>
+  The earliest book printed with movable types, the Gutenberg, or forty-two line Bible of about 1455
+  </em> <br>
+  <b>Text (spa):</b> 
+  <em>
+  El primer libro impreso con tipos móviles, la Gutenberg, o Biblia de cuarenta y dos líneas de alrededor de 1455
+  </em> <br>
+  <b>Text (fra):</b> 
+  <em>
+  Le premier livre imprimé avec des caractères mobiles, la Bible de Gutenberg, ou Bible de quarante-deux lignes, datant d'environ 1455
+  </em>
+</div>
+<br>
+
+<table>
+  <tbody>
+    <tr>
+      <th style="text-align: center">English </th>
+      <th style="text-align: center">Spanish </th>
+      <th style="text-align: center">French </th>
+    </tr>
+    <tr>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/SeamlessM4T/seamlessM4T_large_finetuned_spa/eng/2.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/SeamlessM4T/seamlessM4T_large_finetuned_spa/spa/2.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/SeamlessM4T/seamlessM4T_large_finetuned_spa/fra/2.wav" autoplay="">
+        </audio></td>
+    </tr>
+  </tbody>
+</table>
+<div>
+  <b>Text (eng):</b> 
+  <em>
+  The Middle Ages brought calligraphy to perfection, and it was natural therefore
+  </em> <br>
+  <b>Text (spa):</b> 
+  <em>
+  La Edad Media trajo la caligrafía a la perfección, y por lo tanto era natural
+  </em> <br>
+  <b>Text (fra):</b> 
+  <em>
+  Le Moyen Âge a apporté la calligraphie à la perfection, et il était donc naturel
+  </em>
+</div>
+<br>
+
+<table>
+  <tbody>
+    <tr>
+      <th style="text-align: center">English </th>
+      <th style="text-align: center">Spanish </th>
+      <th style="text-align: center">French </th>
+    </tr>
+    <tr>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/SeamlessM4T/seamlessM4T_large_finetuned_spa/eng/3.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/SeamlessM4T/seamlessM4T_large_finetuned_spa/spa/3.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/SeamlessM4T/seamlessM4T_large_finetuned_spa/fra/3.wav" autoplay="">
+        </audio></td>
+    </tr>
+  </tbody>
+</table>
+<div>
+  <b>Text (eng):</b> 
+  <em>
+  The earliest book printed with movable type, the aforesaid Gutenberg Bible, is printed in letters which are an exact imitation
+  </em> <br>
+  <b>Text (spa):</b> 
+  <em>
+  El primer libro impreso con tipos móviles, la mencionada Biblia de Gutenberg, está impreso en letras que son una imitación exacta
+  </em> <br>
+  <b>Text (fra):</b> 
+  <em>
+  Le premier livre imprimé avec des caractères mobiles, la Bible de Gutenberg susmentionnée, est imprimé en lettres qui sont une imitation exacte
+  </em>
 </div>
 <br>
 
