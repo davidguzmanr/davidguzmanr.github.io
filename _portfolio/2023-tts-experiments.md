@@ -15,7 +15,7 @@ permalink: /portfolio/tts-experiments/
 - [Ensemble](#ensemble)
 - [SeamlessM4T](#seamlessm4t)
   - [SeamlessM4T-large](#seamlessm4t-large)
-  - [SeamlessM4T-large finetuned](#seamlessm4t-large-finetuned)
+  - [SeamlessM4T-large finetuned (eng-spa)](#seamlessm4t-large-finetuned-eng-spa)
 
 # Vocoders
 
@@ -767,7 +767,7 @@ permalink: /portfolio/tts-experiments/
 </div>
 <br>
 
-## SeamlessM4T-large finetuned (eng-spa data) {#seamlessm4t-large-finetuned}
+## SeamlessM4T-large finetuned (eng-spa) {#seamlessm4t-large-finetuned-eng-spa}
 
 <table>
   <tbody>
@@ -909,6 +909,148 @@ permalink: /portfolio/tts-experiments/
   <b>Text (fra):</b> 
   <em>
   Le premier livre imprimé avec des caractères mobiles, la Bible de Gutenberg susmentionnée, est imprimé en lettres qui sont une imitation exacte
+  </em>
+</div>
+<br>
+
+## SeamlessM4T-large finetuned (moh) {#seamlessm4t-large-finetuned-moh}
+
+<table>
+  <tbody>
+    <tr>
+      <th style="text-align: center">501-650-kawe0612.wav (Ground-Truth) </th>
+      <th style="text-align: center">501-650-kawe0612.wav (10 epochs) </th>
+      <th style="text-align: center">501-650-kawe0612.wav (20 epochs) </th>
+    </tr>
+    <tr>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/SeamlessM4T/seamlessM4T_large_finetuned_moh/ground-truth/am-kanienkeha-ionkwahtharak-501-650-kawe0612.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/SeamlessM4T/seamlessM4T_large_finetuned_moh/10-epochs/am-kanienkeha-ionkwahtharak-501-650-kawe0612.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/SeamlessM4T/seamlessM4T_large_finetuned_moh/20-epochs/am-kanienkeha-ionkwahtharak-501-650-kawe0612.wav" autoplay="">
+        </audio></td>
+    </tr>
+  </tbody>
+</table>
+<div>
+  <b>Text:</b> 
+  <em>
+  kèn:'en tsitskó:tak kanaktà:ke
+  </em>
+</div>
+<br>
+
+<table>
+  <tbody>
+    <tr>
+      <th style="text-align: center">651-1056-kawe0755.wav (Ground-Truth) </th>
+      <th style="text-align: center">651-1056-kawe0755.wav (10 epochs) </th>
+      <th style="text-align: center">651-1056-kawe0755.wav (20 epochs) </th>
+    </tr>
+    <tr>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/SeamlessM4T/seamlessM4T_large_finetuned_moh/ground-truth/am-kanienkeha-ionkwahtharak-651-1056-kawe0755.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/SeamlessM4T/seamlessM4T_large_finetuned_moh/10-epochs/am-kanienkeha-ionkwahtharak-651-1056-kawe0755.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/SeamlessM4T/seamlessM4T_large_finetuned_moh/20-epochs/am-kanienkeha-ionkwahtharak-651-1056-kawe0755.wav" autoplay="">
+        </audio></td>
+    </tr>
+  </tbody>
+</table>
+<div>
+  <b>Text:</b> 
+  <em>
+  tó: nitiothó:re', ronhátien iowisóntion nè:'e ki' shà:ka tenkate'khahahkwà:na'
+  </em>
+</div>
+<br>
+
+<table>
+  <tbody>
+    <tr>
+      <th style="text-align: center">251-500-kawe0401.wav (Ground-Truth) </th>
+      <th style="text-align: center">251-500-kawe0401.wav (10 epochs) </th>
+      <th style="text-align: center">251-500-kawe0401.wav (20 epochs) </th>
+    </tr>
+    <tr>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/SeamlessM4T/seamlessM4T_large_finetuned_moh/ground-truth/am-kanienkeha-ionkwahtharak-251-500-kawe0401.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/SeamlessM4T/seamlessM4T_large_finetuned_moh/10-epochs/am-kanienkeha-ionkwahtharak-251-500-kawe0401.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/SeamlessM4T/seamlessM4T_large_finetuned_moh/20-epochs/am-kanienkeha-ionkwahtharak-251-500-kawe0401.wav" autoplay="">
+        </audio></td>
+    </tr>
+  </tbody>
+</table>
+<div>
+  <b>Text:</b> 
+  <em>
+  kanatí:re's, ka' nòn:wa niahón:ne' thí: ratiksa'okòn:'a?
+  </em>
+</div>
+<br>
+
+<table>
+  <tbody>
+    <tr>
+      <th style="text-align: center">251-500-kawe0305.wav (Ground-Truth) </th>
+      <th style="text-align: center">251-500-kawe0305.wav (10 epochs) </th>
+      <th style="text-align: center">251-500-kawe0305.wav (20 epochs) </th>
+    </tr>
+    <tr>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/SeamlessM4T/seamlessM4T_large_finetuned_moh/ground-truth/am-kanienkeha-ionkwahtharak-251-500-kawe0305.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/SeamlessM4T/seamlessM4T_large_finetuned_moh/10-epochs/am-kanienkeha-ionkwahtharak-251-500-kawe0305.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/SeamlessM4T/seamlessM4T_large_finetuned_moh/20-epochs/am-kanienkeha-ionkwahtharak-251-500-kawe0305.wav" autoplay="">
+        </audio></td>
+    </tr>
+  </tbody>
+</table>
+<div>
+  <b>Text:</b> 
+  <em>
+  ahsonhtà:ke ken kahrónnion?
+  </em>
+</div>
+<br>
+
+<table>
+  <tbody>
+    <tr>
+      <th style="text-align: center">651-1056-kawe0696.wav (Ground-Truth) </th>
+      <th style="text-align: center">651-1056-kawe0696.wav (10 epochs) </th>
+      <th style="text-align: center">651-1056-kawe0696.wav (20 epochs) </th>
+    </tr>
+    <tr>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/SeamlessM4T/seamlessM4T_large_finetuned_moh/ground-truth/am-kanienkeha-ionkwahtharak-651-1056-kawe0696.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/SeamlessM4T/seamlessM4T_large_finetuned_moh/10-epochs/am-kanienkeha-ionkwahtharak-651-1056-kawe0696.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/SeamlessM4T/seamlessM4T_large_finetuned_moh/20-epochs/am-kanienkeha-ionkwahtharak-651-1056-kawe0696.wav" autoplay="">
+        </audio></td>
+    </tr>
+  </tbody>
+</table>
+<div>
+  <b>Text:</b> 
+  <em>
+  á:keh tsi niiononhwákte' khsinà:ke
   </em>
 </div>
 <br>
