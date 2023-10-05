@@ -16,6 +16,8 @@ permalink: /portfolio/tts-experiments/
 - [SeamlessM4T](#seamlessm4t)
   - [SeamlessM4T-large](#seamlessm4t-large)
   - [SeamlessM4T-large finetuned (eng-spa)](#seamlessm4t-large-finetuned-eng-spa)
+  - [SeamlessM4T-large finetuned (moh)](#seamlessm4t-large-finetuned-moh)
+- [Denoiser](#denoiser)
 
 # Vocoders
 
@@ -1054,6 +1056,171 @@ permalink: /portfolio/tts-experiments/
   </em>
 </div>
 <br>
+
+# Denoiser {#seamlessm4t-large-finetuned-eng-spa}
+
+|                        | **FastSpeech2** | **FastSpeech2 + denoiser** | **FastSpeech2 + postnet** | **FastSpeech2 + postnet + denoiser** |
+| :--------------------: | :-------------: | :------------------------: | :-----------------------: | :----------------------------------: |
+| Mel-ceptral distortion |     5.2347      |           5.2297           |          5.2307           |              **5.2294**              |
+|     F0 correlation     |     0.1808      |           0.1985           |          0.1902           |              **0.2014**              |
+|          PESQ          |     1.2898      |           1.2858           |          1.2851           |              **1.2972**              |
+
+<table>
+  <tbody>
+    <tr>
+      <th style="text-align: center">LJ001-0007.wav (FastSpeech2) </th>
+    </tr>
+    <tr>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/denoiser/output/LJ001-0007.wav" autoplay="">
+        </audio></td>
+    </tr>
+    <tr>
+      <th style="text-align: center">LJ001-0007.wav (FastSpeech2 + denoiser) </th>
+    </tr>
+    <tr>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/denoiser/denoised-output/LJ001-0007.wav" autoplay="">
+        </audio></td>
+    </tr>
+    <tr>
+      <th style="text-align: center">LJ001-0007.wav (FastSpeech2 + postnet) </th>
+    </tr>
+    <tr>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/denoiser/postnet-output/LJ001-0007.wav" autoplay="">
+        </audio></td>
+    </tr>
+    <tr>
+      <th style="text-align: center">LJ001-0007.wav (FastSpeech2 + postnet + denoiser) </th>
+    </tr>
+    <tr>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/denoiser/denoised-postnet-output/LJ001-0007.wav" autoplay="">
+        </audio></td>
+    </tr>
+  </tbody>
+</table>
+<div>
+  <b>Text:</b> 
+  <em>
+  the earliest book printed with movable types, the Gutenberg, or "forty-two line Bible" of about fourteen fifty-five
+  </em>
+</div>
+<br>
+
+# 40 and 80 Mel bands
+
+<style type="text/css">
+.tg  {border:none;border-collapse:collapse;border-color:#ccc;border-spacing:0;}
+.tg td{background-color:#fff;border-color:#ccc;border-style:solid;border-width:0px;color:#333;
+  font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{background-color:#f0f0f0;border-color:#ccc;border-style:solid;border-width:0px;color:#333;
+  font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-7btt{border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-c3ow"></th>
+    <th class="tg-c3ow"></th>
+    <th class="tg-c3ow"><span style="font-weight:bold">FastSpeech2</span></th>
+    <th class="tg-c3ow"><span style="font-weight:bold">FastSpeech2 + denoiser</span></th>
+    <th class="tg-c3ow"><span style="font-weight:bold">FastSpeech2 + postnet</span></th>
+    <th class="tg-c3ow"><span style="font-weight:bold">FastSpeech2 + postnet + denoiser</span></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-7btt" rowspan="3">80-mel</td>
+    <td class="tg-c3ow">Mel-ceptral distortion</td>
+    <td class="tg-c3ow">7.3128</td>
+    <td class="tg-c3ow">7.3531</td>
+    <td class="tg-c3ow">7.3203</td>
+    <td class="tg-c3ow">7.3594</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">F0 correlation</td>
+    <td class="tg-c3ow">0.0360</td>
+    <td class="tg-c3ow">0.0418</td>
+    <td class="tg-c3ow">0.0370</td>
+    <td class="tg-c3ow">0.0385</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">PESQ</td>
+    <td class="tg-c3ow">1.3170</td>
+    <td class="tg-c3ow">1.2809</td>
+    <td class="tg-c3ow">1.2939</td>
+    <td class="tg-c3ow">1.2858</td>
+  </tr>
+  <tr>
+    <td class="tg-amwm" rowspan="3">40-mel</td>
+    <td class="tg-baqh">Mel-ceptral distortion</td>
+    <td class="tg-baqh">7.3444</td>
+    <td class="tg-baqh">7.3391</td>
+    <td class="tg-baqh">7.3535</td>
+    <td class="tg-baqh">7.3462</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">F0 correlation</td>
+    <td class="tg-baqh">0.0392</td>
+    <td class="tg-baqh">0.0320</td>
+    <td class="tg-baqh">0.0381</td>
+    <td class="tg-baqh">0.0307</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">PESQ</td>
+    <td class="tg-baqh">1.2604</td>
+    <td class="tg-baqh">1.2254</td>
+    <td class="tg-baqh">1.2436</td>
+    <td class="tg-baqh">1.2295</td>
+  </tr>
+</tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <th style="text-align: center">LJ015-0199.wav (40 mel) </th>
+      <th style="text-align: center">LJ015-0199.wav (80 mel) </th>
+    </tr>
+    <tr>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/40-mel/LJ015-0199.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/00-mel/LJ015-0199.wav" autoplay="">
+        </audio></td>
+    </tr>
+    <tr>
+      <th style="text-align: center">LJ024-0078.wav (40 mel) </th>
+      <th style="text-align: center">LJ024-0078.wav (80 mel) </th>
+    </tr>
+    <tr>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/40-mel/LJ024-0078.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/40-mel/LJ024-0078.wav" autoplay="">
+        </audio></td>
+    </tr>
+    <tr>
+      <th style="text-align: center">LJ037-0160.wav (40 mel) </th>
+      <th style="text-align: center">LJ037-0160.wav (80 mel) </th>
+    </tr>
+    <tr>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/40-mel/LJ037-0160.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/40-mel/LJ037-0160.wav" autoplay="">
+        </audio></td>
+    </tr>
+  </tbody>
+</table>
 
 # Acknowledgement
 
