@@ -18,6 +18,7 @@ permalink: /portfolio/tts-experiments/
   - [SeamlessM4T-large finetuned (eng-spa)](#seamlessm4t-large-finetuned-eng-spa)
   - [SeamlessM4T-large finetuned (moh)](#seamlessm4t-large-finetuned-moh)
 - [Denoiser](#denoiser)
+- [EveryVoice vocoder](#everyvoice-vocoder)
 
 # Vocoders
 
@@ -1221,6 +1222,282 @@ permalink: /portfolio/tts-experiments/
     </tr>
   </tbody>
 </table>
+
+# EveryVoice vocoder {#everyvoice-vocoder}
+
+This model was only trained with English data (around 445 hours from LJSpeech, LibriTTS and VCTK). We also test in unseen speakers and languages.
+
+## English
+
+<table>
+  <tbody>
+    <tr>
+      <th style="text-align: center">LJ022-0180.wav (Ground truth) </th>
+      <th style="text-align: center">LJ022-0180.wav (Universal vocoder) </th>
+      <th style="text-align: center">LJ022-0180.wav (EveryVoice vocoder) </th>
+    </tr>
+    <tr>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/EveryVoice-vocoder/eng/LJ022-0180-gt.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/EveryVoice-vocoder/eng/LJ022-0180-universal.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/EveryVoice-vocoder/eng/LJ022-0180-everyvoice.wav" autoplay="">
+        </audio></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+
+<table>
+  <tbody>
+    <tr>
+      <th style="text-align: center">LJ030-0054.wav (Ground truth) </th>
+      <th style="text-align: center">LJ030-0054.wav (Universal vocoder) </th>
+      <th style="text-align: center">LJ030-0054.wav (EveryVoice vocoder) </th>
+    </tr>
+    <tr>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/EveryVoice-vocoder/eng/LJ030-0054-gt.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/EveryVoice-vocoder/eng/LJ030-0054-universal.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/EveryVoice-vocoder/eng/LJ030-0054-everyvoice.wav" autoplay="">
+        </audio></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+
+<table>
+  <tbody>
+    <tr>
+      <th style="text-align: center">7314_77782_000009_000003.wav (Ground truth) </th>
+      <th style="text-align: center">7314_77782_000009_000003.wav (Universal vocoder) </th>
+      <th style="text-align: center">7314_77782_000009_000003.wav (EveryVoice vocoder) </th>
+    </tr>
+    <tr>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/EveryVoice-vocoder/eng/7314_77782_000009_000003-gt.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/EveryVoice-vocoder/eng/7314_77782_000009_000003-universal.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/EveryVoice-vocoder/eng/7314_77782_000009_000003-everyvoice.wav" autoplay="">
+        </audio></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+
+## Spanish
+
+<table>
+  <tbody>
+    <tr>
+      <th style="text-align: center">549.wav (Ground truth) </th>
+      <th style="text-align: center">549.wav (Universal vocoder) </th>
+      <th style="text-align: center">549.wav (EveryVoice vocoder) </th>
+    </tr>
+    <tr>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/EveryVoice-vocoder/spa/549-gt.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/EveryVoice-vocoder/spa/549-universal.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/EveryVoice-vocoder/spa/549-everyvoice.wav" autoplay="">
+        </audio></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+
+<table>
+  <tbody>
+    <tr>
+      <th style="text-align: center">774.wav (Ground truth) </th>
+      <th style="text-align: center">774.wav (Universal vocoder) </th>
+      <th style="text-align: center">774.wav (EveryVoice vocoder) </th>
+    </tr>
+    <tr>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/EveryVoice-vocoder/spa/774-gt.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/EveryVoice-vocoder/spa/774-universal.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/EveryVoice-vocoder/spa/774-everyvoice.wav" autoplay="">
+        </audio></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+
+<table>
+  <tbody>
+    <tr>
+      <th style="text-align: center">822.wav (Ground truth) </th>
+      <th style="text-align: center">822.wav (Universal vocoder) </th>
+      <th style="text-align: center">822.wav (EveryVoice vocoder) </th>
+    </tr>
+    <tr>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/EveryVoice-vocoder/spa/822-gt.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/EveryVoice-vocoder/spa/822-universal.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/EveryVoice-vocoder/spa/822-everyvoice.wav" autoplay="">
+        </audio></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+
+## French
+
+<table>
+  <tbody>
+    <tr>
+      <th style="text-align: center">F10_a1_s050_v01.wav (Ground truth) </th>
+      <th style="text-align: center">F10_a1_s050_v01.wav (Universal vocoder) </th>
+      <th style="text-align: center">F10_a1_s050_v01.wav (EveryVoice vocoder) </th>
+    </tr>
+    <tr>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/EveryVoice-vocoder/fra/F10_a1_s050_v01-gt.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/EveryVoice-vocoder/fra/F10_a1_s050_v01-universal.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/EveryVoice-vocoder/fra/F10_a1_s050_v01-everyvoice.wav" autoplay="">
+        </audio></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+
+<table>
+  <tbody>
+    <tr>
+      <th style="text-align: center">M07_a3_s076_v01.wav (Ground truth) </th>
+      <th style="text-align: center">M07_a3_s076_v01.wav (Universal vocoder) </th>
+      <th style="text-align: center">M07_a3_s076_v01.wav (EveryVoice vocoder) </th>
+    </tr>
+    <tr>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/EveryVoice-vocoder/fra/M07_a3_s076_v01-gt.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/EveryVoice-vocoder/fra/M07_a3_s076_v01-universal.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/EveryVoice-vocoder/fra/M07_a3_s076_v01-everyvoice.wav" autoplay="">
+        </audio></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+
+<table>
+  <tbody>
+    <tr>
+      <th style="text-align: center">M07_a3_s095_v01.wav (Ground truth) </th>
+      <th style="text-align: center">M07_a3_s095_v01.wav (Universal vocoder) </th>
+      <th style="text-align: center">M07_a3_s095_v01.wav (EveryVoice vocoder) </th>
+    </tr>
+    <tr>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/EveryVoice-vocoder/fra/M07_a3_s095_v01-gt.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/EveryVoice-vocoder/fra/M07_a3_s095_v01-universal.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/EveryVoice-vocoder/fra/M07_a3_s095_v01-everyvoice.wav" autoplay="">
+        </audio></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+
+## Xhosa
+
+<table>
+  <tbody>
+    <tr>
+      <th style="text-align: center">xho_0050_0251778038.wav (Ground truth) </th>
+      <th style="text-align: center">xho_0050_0251778038.wav (Universal vocoder) </th>
+      <th style="text-align: center">xho_0050_0251778038.wav (EveryVoice vocoder) </th>
+    </tr>
+    <tr>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/EveryVoice-vocoder/xho/xho_0050_0251778038-gt.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/EveryVoice-vocoder/xho/xho_0050_0251778038-universal.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/EveryVoice-vocoder/xho/xho_0050_0251778038-everyvoice.wav" autoplay="">
+        </audio></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+
+<table>
+  <tbody>
+    <tr>
+      <th style="text-align: center">xho_0050_2031808299.wav (Ground truth) </th>
+      <th style="text-align: center">xho_0050_2031808299.wav (Universal vocoder) </th>
+      <th style="text-align: center">xho_0050_2031808299.wav (EveryVoice vocoder) </th>
+    </tr>
+    <tr>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/EveryVoice-vocoder/xho/xho_0050_2031808299-gt.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/EveryVoice-vocoder/xho/xho_0050_2031808299-universal.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/EveryVoice-vocoder/xho/xho_0050_2031808299-everyvoice.wav" autoplay="">
+        </audio></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+
+<table>
+  <tbody>
+    <tr>
+      <th style="text-align: center">xho_4280_6127787822.wav (Ground truth) </th>
+      <th style="text-align: center">xho_4280_6127787822.wav (Universal vocoder) </th>
+      <th style="text-align: center">xho_4280_6127787822.wav (EveryVoice vocoder) </th>
+    </tr>
+    <tr>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/EveryVoice-vocoder/xho/xho_4280_6127787822-gt.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/EveryVoice-vocoder/xho/xho_4280_6127787822-universal.wav" autoplay="">
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="/files/audios/EveryVoice-vocoder/xho/xho_4280_6127787822-everyvoice.wav" autoplay="">
+        </audio></td>
+    </tr>
+  </tbody>
+</table>
+<br>
 
 # Acknowledgement
 
