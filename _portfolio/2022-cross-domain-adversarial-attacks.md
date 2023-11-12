@@ -1,6 +1,5 @@
 ---
 title: "Cross-Domain Transferability of Adversarial Examples in NLP"
-page_date: "some" 
 excerpt: "Final project for my *Trustworthy Machine Learning* course"
 collection: portfolio
 permalink: /portfolio/cross-domain-adversarial-attacks/
