@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "David Guzmán"
   avatar           : "headshot.jpg"
-  bio              : "MScAC student at University of Toronto"
-  location         : "Toronto, Canada"
+  bio              : "Upcoming PhD student"
+  location         : "Mexico City"
   employer         : # "IIMAS, UNAM"
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : # "http://yourfullgooglescholarurl.com"
-  email            : "david.guzman@mail.utoronto.ca"
+  googlescholar    : https://scholar.google.com/citations?user=pdzhBdoAAAAJ&hl=en
+  email            : "david.guzman@alumni.utoronto.ca"
   researchgate     : # "https://www.researchgate.net/profile/David_Guzman23"
   uri              :
   bitbucket        :
