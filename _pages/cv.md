@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-You can download a copy of my resume [here](../files/Resume_David_Guzman_EN.pdf), I will try to update it as often as I can.
+You can download a copy of my resume [here](../files/Resume_David_Guzman.pdf), I will try to update it as often as I can.
 
 Education
 ======
