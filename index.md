@@ -6,6 +6,7 @@ description: >
   with a focus on personal sites that are meant to impress.
 hide_description: true
 sitemap: false
+cover: True
 ---
 
 <style>

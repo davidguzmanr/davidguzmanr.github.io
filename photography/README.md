@@ -9,24 +9,129 @@ permalink: /photography/
 ---
 
 0. this unordered seed list will be replaced by toc as unordered list
-{:toc}
+  {:toc}
 
 <style>
   /* Target only this CV page’s paragraphs and force‐justify them */
   .layout-page p {
     text-align: justify;
   }
+  /* Masonry‐style grid CSS */
+  /* ================================
+     PHOTO GRID (MASONRY.JS, 3 COLS)
+     ================================ */
+  .photo-grid-js {
+    margin-left: -0.5rem; /* half of the gutter to “pull back” */
+    width: auto;
+  }
+  
+  .photo-grid-js .grid-item {
+    width: 45.0%;         /* control number of columns */
+    padding-left: 0.5rem; /* left‐side gutter of 0.5rem */
+    margin-bottom: 1rem;  /* vertical gutter between rows */
+  }
+  
+  .photo-grid-js .grid-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;                          /* optional styling */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);     /* optional styling */
+  }
+  
+  /* Lightbox styles */
+  #lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    transform: scale(0.9);
+    pointer-events: none;
+    transition: opacity 0.2s ease-out, transform 0.2s cubic-bezier(0.33, 1, 0.68, 1); /* snap easing */
+  }
+  #lightbox.show {
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: auto;
+  }
+  #lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease;
+  }
+
+  /* Responsive: 2 columns below 768px */
+  /* @media (max-width: 768px) {
+    .photo-grid-js .grid-item {
+      width: 50%;
+    }
+  } */
+  /* Responsive: 1 column below 480px */
+  /* @media (max-width: 480px) {
+    .photo-grid-js .grid-item {
+      width: 100%;
+    }
+  } */
 </style>
 
-When I am not working or doing research, I really like taking photos, especially landscapes and astrophotography. Here are a few photos that I like.
+When I am not working or doing research, I really like taking photos, especially **landscapes**, **astrophotography** and **moon/sun alignments**. Here are a few photos that I like.
 
-<div class="photo-grid">
-  <img src="../assets/photos/Hummingbird-3.jpg" alt="Photo 1" onclick="openLightbox(this)">
-  <img src="../assets/photos/Camilo-1.jpg" alt="Photo 2" onclick="openLightbox(this)">
-  <img src="../assets/photos/Zimapan-2.jpg" alt="Photo 3" onclick="openLightbox(this)">
-  <img src="../assets/photos/Guelaguetza-1.jpg" alt="Photo 4" onclick="openLightbox(this)">
-  <img src="../assets/photos/Hierve-el-Agua-2.jpg" alt="Photo 5" onclick="openLightbox(this)">
-  <img src="../assets/photos/Moon-HDR.jpg" alt="Photo 6" onclick="openLightbox(this)">
+<!-- ======= PHOTO GRID SECTION ======= -->
+<div class="photo-grid-js">
+  <div class="grid-item">
+    <img src="../assets/photos/Hummingbird-3.jpg" alt="Hummingbird" onclick="openLightbox(this)">
+  </div>
+  <div class="grid-item">
+    <img src="../assets/photos/Zimapan-2.jpg" alt="Zimapan" onclick="openLightbox(this)">
+  </div>
+  <div class="grid-item">
+    <img src="../assets/photos/Guelaguetza-1.jpg" alt="Guelaguetza" onclick="openLightbox(this)">
+  </div>
+  <div class="grid-item">
+    <img src="../assets/photos/Xochimilco-3.jpg" alt="Xochimilco" onclick="openLightbox(this)">
+  </div>
+  <div class="grid-item">
+    <img src="../assets/photos/Hierve-el-Agua-2.jpg" alt="Hierve-el-Agua" onclick="openLightbox(this)">
+  </div>
+  <div class="grid-item">
+    <img src="../assets/photos/Moon-HDR.jpg" alt="Moon-HDR" onclick="openLightbox(this)">
+  </div>
+  <div class="grid-item">
+    <img src="../assets/photos/Zimapan-1.jpg" alt="Zimapan" onclick="openLightbox(this)">
+  </div>
+  <div class="grid-item">
+    <img src="../assets/photos/Dia-de-Muertos-1.jpg" alt="Dia-de-Muertos" onclick="openLightbox(this)">
+  </div>
+  <div class="grid-item">
+    <img src="../assets/photos/Hummingbird-1.jpg" alt="Hummingbird" onclick="openLightbox(this)">
+  </div>
+  <div class="grid-item">
+    <img src="../assets/photos/Camilo-1.jpg" alt="Camilo" onclick="openLightbox(this)">
+  </div>
+  <div class="grid-item">
+    <img src="../assets/photos/Angel-de-la-Independencia-1.jpg" alt="Dia-de-Muertos" onclick="openLightbox(this)">
+  </div>
+  <div class="grid-item">
+    <img src="../assets/photos/Dia-de-Muertos-2.jpg" alt="Dia-de-Muertos" onclick="openLightbox(this)">
+  </div>
+  <div class="grid-item">
+    <img src="../assets/photos/Dia-de-Muertos-3.jpg" alt="Dia-de-Muertos" onclick="openLightbox(this)">
+  </div>
+  <div class="grid-item">
+    <img src="../assets/photos/Hierve-el-Agua-1.jpg" alt="Hierve-el-Agua" onclick="openLightbox(this)">
+  </div>
+    <div class="grid-item">
+    <img src="../assets/photos/Xochimilco-1.jpg" alt="Xochimilco" onclick="openLightbox(this)">
+  </div>
+  <!-- …more as desired… -->
 </div>
 
 <!-- Lightbox container -->
@@ -34,55 +139,9 @@ When I am not working or doing research, I really like taking photos, especially
   <img id="lightbox-img" src="" alt="Expanded Image">
 </div>
 
-<style>
-.photo-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
-  margin-top: 1rem;
-}
-.photo-grid img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-.photo-grid img:hover {
-  transform: scale(1.03);
-}
-
-/* Lightbox styles */
-#lightbox {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.85);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-  opacity: 0;
-  transform: scale(0.9);
-  pointer-events: none;
-  transition: opacity 0.2s ease-out, transform 0.2s cubic-bezier(0.33, 1, 0.68, 1); /* snap easing */
-}
-#lightbox.show {
-  opacity: 1;
-  transform: scale(1);
-  pointer-events: auto;
-}
-
-#lightbox img {
-  max-width: 90%;
-  max-height: 90%;
-  border-radius: 0.5rem;
-  transition: transform 0.3s ease;
-}
-</style>
+<!-- Include imagesLoaded + Masonry.js from CDN -->
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 
 <script>
 function openLightbox(img) {
@@ -95,4 +154,15 @@ function closeLightbox() {
   const lightbox = document.getElementById("lightbox");
   lightbox.classList.remove("show");
 }
+  document.addEventListener("DOMContentLoaded", function () {
+    var grid = document.querySelector('.photo-grid-js');
+    imagesLoaded(grid, function() {
+      new Masonry(grid, {
+        itemSelector: '.grid-item',
+        percentPosition: true,
+        gutter: 16
+      });
+    });
+  });
+  
 </script>
