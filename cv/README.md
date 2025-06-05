@@ -22,7 +22,7 @@ Here is a copy of my [resume](../assets/Resume_David_Guzman.pdf).
 
 ## Work Experience
 
-- **Data Engineer**, _J.D. Power_, Mexico City (Remote). March 2023 – Present.
+- **Data Engineer**, _J.D. Power_, Mexico City (Remote). March 2024 – Present.
 - **Machine Learning Research Intern**, _National Research Council Canada_, Toronto. May 2023 – December 2023.
 - **Data Scientist**, _Grupo Salinas_, Mexico City. November 2021 – July 2022.
 
