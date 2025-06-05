@@ -8,8 +8,22 @@ sitemap: false
 permalink: /photography/
 ---
 
+<!--
+  Always reload once on entering /photography/ by using a URL parameter.
+  If “reload=1” is not present, append it and reload.
+-->
+<script>
+  (function() {
+    const params = new URLSearchParams(window.location.search);
+    if (!params.has('reload')) {
+      params.set('reload', '1');
+      window.location.replace(window.location.pathname + '?' + params.toString());
+    }
+  })();
+</script>
+
 0. this unordered seed list will be replaced by toc as unordered list
-   {:toc}
+  {:toc}
 
 <style>
   /* Target only this CV page’s paragraphs and force‐justify them */
@@ -18,7 +32,7 @@ permalink: /photography/
   }
   /* Masonry‐style grid CSS */
   /* ================================
-     PHOTO GRID (MASONRY.JS, 3 COLS)
+     PHOTO GRID (MASONRY.JS, 2 COLS)
      ================================ */
   .photo-grid-js {
     margin-left: -0.5rem; /* half of the gutter to “pull back” */
@@ -26,7 +40,7 @@ permalink: /photography/
   }
   
   .photo-grid-js .grid-item {
-    width: 45.0%;         /* control number of columns */
+    width: 45.0%;         /* two 45% columns + gutter */
     padding-left: 0.5rem; /* left‐side gutter of 0.5rem */
     margin-bottom: 1rem;  /* vertical gutter between rows */
   }
@@ -35,8 +49,8 @@ permalink: /photography/
     display: block;
     width: 100%;
     height: auto;
-    border-radius: 4px;                          /* optional styling */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);     /* optional styling */
+    border-radius: 4px;                          
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);     
   }
   
   /* Lightbox styles */
@@ -54,7 +68,7 @@ permalink: /photography/
     opacity: 0;
     transform: scale(0.9);
     pointer-events: none;
-    transition: opacity 0.2s ease-out, transform 0.2s cubic-bezier(0.33, 1, 0.68, 1); /* snap easing */
+    transition: opacity 0.2s ease-out, transform 0.2s cubic-bezier(0.33, 1, 0.68, 1);
   }
   #lightbox.show {
     opacity: 1;
@@ -117,7 +131,7 @@ When I am not working or doing research, I really like taking photos, especially
     <img src="../assets/photos/Camilo-1.jpg" alt="Camilo" onclick="openLightbox(this)">
   </div>
   <div class="grid-item">
-    <img src="../assets/photos/Angel-de-la-Independencia-1.jpg" alt="Dia-de-Muertos" onclick="openLightbox(this)">
+    <img src="../assets/photos/Angel-de-la-Independencia-1.jpg" alt="Angel-de-la-Independencia" onclick="openLightbox(this)">
   </div>
   <div class="grid-item">
     <img src="../assets/photos/Dia-de-Muertos-2.jpg" alt="Dia-de-Muertos" onclick="openLightbox(this)">
@@ -128,10 +142,9 @@ When I am not working or doing research, I really like taking photos, especially
   <div class="grid-item">
     <img src="../assets/photos/Hierve-el-Agua-1.jpg" alt="Hierve-el-Agua" onclick="openLightbox(this)">
   </div>
-    <div class="grid-item">
+  <div class="grid-item">
     <img src="../assets/photos/Xochimilco-1.jpg" alt="Xochimilco" onclick="openLightbox(this)">
   </div>
-  <!-- …more as desired… -->
 </div>
 
 <!-- Lightbox container -->
@@ -144,16 +157,6 @@ When I am not working or doing research, I really like taking photos, especially
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 
 <script>
-function openLightbox(img) {
-  const lightbox = document.getElementById("lightbox");
-  const lightboxImg = document.getElementById("lightbox-img");
-  lightboxImg.src = img.src;
-  lightbox.classList.add("show");
-}
-function closeLightbox() {
-  const lightbox = document.getElementById("lightbox");
-  lightbox.classList.remove("show");
-}
   document.addEventListener("DOMContentLoaded", function () {
     var grid = document.querySelector('.photo-grid-js');
     imagesLoaded(grid, function() {
@@ -164,5 +167,15 @@ function closeLightbox() {
       });
     });
   });
-  
+
+  function openLightbox(img) {
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    lightboxImg.src = img.src;
+    lightbox.classList.add("show");
+  }
+  function closeLightbox() {
+    const lightbox = document.getElementById("lightbox");
+    lightbox.classList.remove("show");
+  }
 </script>
