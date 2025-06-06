@@ -125,10 +125,10 @@ When I am not working or doing research, I really like taking photos, especially
     <img src="../assets/photos/Dia-de-Muertos-1.jpg" alt="Dia-de-Muertos" onclick="openLightbox(this)">
   </div>
   <div class="grid-item">
-    <img src="../assets/photos/Hummingbird-1.jpg" alt="Hummingbird" onclick="openLightbox(this)">
+    <img src="../assets/photos/Camilo-1.jpg" alt="Camilo" onclick="openLightbox(this)">
   </div>
   <div class="grid-item">
-    <img src="../assets/photos/Camilo-1.jpg" alt="Camilo" onclick="openLightbox(this)">
+    <img src="../assets/photos/Hummingbird-5.jpg" alt="Hummingbird" onclick="openLightbox(this)">
   </div>
   <div class="grid-item">
     <img src="../assets/photos/Angel-de-la-Independencia-1.jpg" alt="Angel-de-la-Independencia" onclick="openLightbox(this)">
@@ -137,13 +137,19 @@ When I am not working or doing research, I really like taking photos, especially
     <img src="../assets/photos/Dia-de-Muertos-2.jpg" alt="Dia-de-Muertos" onclick="openLightbox(this)">
   </div>
   <div class="grid-item">
-    <img src="../assets/photos/Dia-de-Muertos-3.jpg" alt="Dia-de-Muertos" onclick="openLightbox(this)">
+    <img src="../assets/photos/Hummingbird-1.jpg" alt="Hummingbird" onclick="openLightbox(this)">
   </div>
   <div class="grid-item">
     <img src="../assets/photos/Hierve-el-Agua-1.jpg" alt="Hierve-el-Agua" onclick="openLightbox(this)">
   </div>
   <div class="grid-item">
     <img src="../assets/photos/Xochimilco-1.jpg" alt="Xochimilco" onclick="openLightbox(this)">
+  </div>
+  <div class="grid-item">
+    <img src="../assets/photos/Dia-de-Muertos-3.jpg" alt="Dia-de-Muertos" onclick="openLightbox(this)">
+  </div>
+  <div class="grid-item">
+    <img src="../assets/photos/Zimapan-3.jpg" alt="Zimapan" onclick="openLightbox(this)">
   </div>
 </div>
 
