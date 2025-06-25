@@ -28,30 +28,30 @@ Here is a copy of my [resume](../assets/Resume_David_Guzman.pdf).
 
 ## Education
 
-- **MSc in Applied Computing**, University of Toronto, Department of Computer Science (GPA: 3.93/4). September 2022 – June 2024
-- **BSc in Data Science**, National Autonomous University of Mexico (UNAM), Research Institute in Applied Mathematics (GPA: 9.60/10). August 2019 – June 2021
-- **BSc in Physics**, National Autonomous University of Mexico (UNAM), Faculty of Science (GPA: 9.54/10). August 2015 – June 2020
+- **MSc in Applied Computing**, University of Toronto, Department of Computer Science (GPA: 3.93/4). September 2022 – June 2024.
+- **BSc in Data Science**, National Autonomous University of Mexico (UNAM), Research Institute in Applied Mathematics (GPA: 9.60/10). August 2019 – June 2021.
+- **BSc in Physics**, National Autonomous University of Mexico (UNAM), Faculty of Science (GPA: 9.54/10). August 2015 – June 2020.
 
 ## Technical Skills
 
 - **Certifications:**
-  - AWS Certified Machine Learning – Specialty (MLS-C01)
+  - [AWS Certified Machine Learning – Specialty (MLS-C01)](https://www.credly.com/badges/505bb0aa-c18c-4988-a8f2-d55f275351fb/public_url).
 - **Programming Languages:**
-  - Python, Julia, R, Fortran, SQL
+  - Python, Julia, R, Fortran, SQL.
 - **Machine & Deep Learning:**
-  - Scikit-learn, XGBoost, PyTorch, Keras, TensorFlow, PySpark MLlib
+  - Scikit-learn, XGBoost, PyTorch, Keras, TensorFlow, PySpark MLlib.
 - **Data Analysis & Visualization:**
-  - NumPy, SciPy, Pandas, Matplotlib, Seaborn, Bokeh, Plotly
+  - NumPy, SciPy, Pandas, Matplotlib, Seaborn, Bokeh, Plotly.
 - **Natural Language Processing (NLP):**
-  - NLTK, spaCy, Hugging Face, LangChain
+  - NLTK, spaCy, Hugging Face, LangChain.
 - **Cloud Services:**
-  - AWS, Azure
+  - AWS, Azure.
 - **Databases:**
-  - PostgreSQL, Redshift, MongoDB, Redis
+  - PostgreSQL, Redshift, MongoDB, Redis.
 - **Miscellaneous:**
-  - Linux, Git, LaTeX, Slurm, REST APIs, Scrum
+  - Linux, Git, LaTeX, Slurm, REST APIs, Scrum.
 - **Languages:**
-  - Spanish (Native), English (Proficient), French (Intermediate)
+  - Spanish (Native), English (Proficient), French (Intermediate).
 
 ## Awards
 

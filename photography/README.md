@@ -23,7 +23,7 @@ permalink: /photography/
 </script>
 
 0. this unordered seed list will be replaced by toc as unordered list
-  {:toc}
+{:toc}
 
 <style>
   /* Target only this CV page’s paragraphs and force‐justify them */
