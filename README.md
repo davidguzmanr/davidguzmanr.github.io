@@ -15,6 +15,15 @@ A quicker, cleaner way to get started blogging with [Hydejack](https://hydejack.
 * Read the [docs](https://hydejack.com/docs/)
 * Buy the [PRO version](https://hydejack.com/download/) to get the project and resume layout, newsletter subscription box, custom forms, and more.
 
+## Environment
+Use the right Ruby version for this project, since I have a different global version
+
+```bash
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init - bash)"
+source ~/.bashrc
+```
+
 [^1]: Requires Bundler. Install with `gem install bundler`.
 
 [download]: https://github.com/hydecorp/hydejack-starter-kit/archive/master.zip
