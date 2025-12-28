@@ -107,19 +107,22 @@ When I am not working or doing research, I really like taking photos, especially
     <img src="../assets/photos/Zimapan-2.jpg" alt="Zimapan" onclick="openLightbox(this)">
   </div>
   <div class="grid-item">
+    <img src="../assets/photos/Hierve-el-Agua-2.jpg" alt="Hierve-el-Agua" onclick="openLightbox(this)">
+  </div>
+  <div class="grid-item">
     <img src="../assets/photos/Guelaguetza-1.jpg" alt="Guelaguetza" onclick="openLightbox(this)">
   </div>
   <div class="grid-item">
     <img src="../assets/photos/Xochimilco-3.jpg" alt="Xochimilco" onclick="openLightbox(this)">
   </div>
   <div class="grid-item">
-    <img src="../assets/photos/Hierve-el-Agua-2.jpg" alt="Hierve-el-Agua" onclick="openLightbox(this)">
-  </div>
-  <div class="grid-item">
     <img src="../assets/photos/Moon-HDR.jpg" alt="Moon-HDR" onclick="openLightbox(this)">
   </div>
   <div class="grid-item">
     <img src="../assets/photos/Zimapan-1.jpg" alt="Zimapan" onclick="openLightbox(this)">
+  </div>
+  <div class="grid-item">
+    <img src="../assets/photos/Iztaccihuatl-1.jpg" alt="Iztaccihuatl" onclick="openLightbox(this)">
   </div>
   <div class="grid-item">
     <img src="../assets/photos/Dia-de-Muertos-1.jpg" alt="Dia-de-Muertos" onclick="openLightbox(this)">
@@ -146,10 +149,13 @@ When I am not working or doing research, I really like taking photos, especially
     <img src="../assets/photos/Xochimilco-1.jpg" alt="Xochimilco" onclick="openLightbox(this)">
   </div>
   <div class="grid-item">
-    <img src="../assets/photos/Dia-de-Muertos-3.jpg" alt="Dia-de-Muertos" onclick="openLightbox(this)">
+    <img src="../assets/photos/Montreal-Fall-2.jpg" alt="Fall" onclick="openLightbox(this)">
   </div>
   <div class="grid-item">
-    <img src="../assets/photos/Zimapan-3.jpg" alt="Zimapan" onclick="openLightbox(this)">
+    <img src="../assets/photos/Montreal-Fall-1.jpg" alt="Fall" onclick="openLightbox(this)">
+  </div>
+  <div class="grid-item">
+    <img src="../assets/photos/Montreal-Fall-3.jpg" alt="Fall" onclick="openLightbox(this)">
   </div>
 </div>
 
