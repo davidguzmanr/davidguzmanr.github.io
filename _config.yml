@@ -310,6 +310,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - functions
+  - speechresearch.github.io
 include:
   - _routes.json
   - .well-known
