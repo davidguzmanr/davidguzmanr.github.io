@@ -146,7 +146,7 @@ When I am not working or doing research, I really like taking photos, especially
     <img src="../assets/photos/Hierve-el-Agua-1.jpg" alt="Hierve-el-Agua" onclick="openLightbox(this)">
   </div>
   <div class="grid-item">
-    <img src="../assets/photos/Xochimilco-1.jpg" alt="Xochimilco" onclick="openLightbox(this)">
+    <img src="../assets/photos/Clouds-1.jpg" alt="Clouds" onclick="openLightbox(this)">
   </div>
   <div class="grid-item">
     <img src="../assets/photos/Montreal-Fall-2.jpg" alt="Fall" onclick="openLightbox(this)">
