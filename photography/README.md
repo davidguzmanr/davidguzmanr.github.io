@@ -116,6 +116,9 @@ When I am not working or doing research, I really like taking photos, especially
     <img src="../assets/photos/Xochimilco-3.jpg" alt="Xochimilco" onclick="openLightbox(this)">
   </div>
   <div class="grid-item">
+    <img src="../assets/photos/Tadoussac.jpg" alt="Tadoussac" onclick="openLightbox(this)">
+  </div>
+  <div class="grid-item">
     <img src="../assets/photos/Moon-HDR.jpg" alt="Moon-HDR" onclick="openLightbox(this)">
   </div>
   <div class="grid-item">
@@ -143,10 +146,10 @@ When I am not working or doing research, I really like taking photos, especially
     <img src="../assets/photos/Hummingbird-1.jpg" alt="Hummingbird" onclick="openLightbox(this)">
   </div>
   <div class="grid-item">
-    <img src="../assets/photos/Hierve-el-Agua-1.jpg" alt="Hierve-el-Agua" onclick="openLightbox(this)">
+    <img src="../assets/photos/Clouds-1.jpg" alt="Clouds" onclick="openLightbox(this)">
   </div>
   <div class="grid-item">
-    <img src="../assets/photos/Clouds-1.jpg" alt="Clouds" onclick="openLightbox(this)">
+    <img src="../assets/photos/Hierve-el-Agua-1.jpg" alt="Hierve-el-Agua" onclick="openLightbox(this)">
   </div>
   <div class="grid-item">
     <img src="../assets/photos/Montreal-Fall-2.jpg" alt="Fall" onclick="openLightbox(this)">
