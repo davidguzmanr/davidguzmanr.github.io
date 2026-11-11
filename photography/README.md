@@ -6,53 +6,75 @@ description: >
 hide_description: true
 sitemap: false
 permalink: /photography/
+# Photos shown in the grid, in order. Each one is placed into whichever column
+# is currently shorter (the same rule Masonry.js uses), so the layout is computed
+# at build time and renders correctly on the very first frame, with no JavaScript.
+# To add a photo, append it here with its pixel dimensions, e.g.
+#   python3 -c "from PIL import Image; print(Image.open('assets/photos/NAME.jpg').size)"
+photos:
+  - { file: Hummingbird-3.jpg, alt: Hummingbird, width: 2048, height: 1365 }
+  - { file: Zimapan-2.jpg, alt: Zimapan, width: 2048, height: 1365 }
+  - { file: Hierve-el-Agua-2.jpg, alt: Hierve-el-Agua, width: 2011, height: 1454 }
+  - { file: Guelaguetza-1.jpg, alt: Guelaguetza, width: 2048, height: 1128 }
+  - { file: Xochimilco-3.jpg, alt: Xochimilco, width: 1201, height: 1201 }
+  - { file: Tadoussac.jpg, alt: Tadoussac, width: 2048, height: 1365 }
+  - { file: Moon-HDR.jpg, alt: Moon-HDR, width: 2048, height: 2048 }
+  - { file: Zimapan-1.jpg, alt: Zimapan, width: 1010, height: 2048 }
+  - { file: Iztaccihuatl-1.jpg, alt: Iztaccihuatl, width: 2048, height: 844 }
+  - { file: Dia-de-Muertos-1.jpg, alt: Dia-de-Muertos, width: 1365, height: 2048 }
+  - { file: Camilo-1.jpg, alt: Camilo, width: 2048, height: 1365 }
+  - { file: Hummingbird-5.jpg, alt: Hummingbird, width: 1828, height: 1200 }
+  - { file: Angel-de-la-Independencia-1.jpg, alt: Angel-de-la-Independencia, width: 1216, height: 1902 }
+  - { file: Dia-de-Muertos-2.jpg, alt: Dia-de-Muertos, width: 2048, height: 1609 }
+  - { file: Hummingbird-1.jpg, alt: Hummingbird, width: 1728, height: 1332 }
+  - { file: Clouds-1.jpg, alt: Clouds, width: 2048, height: 1520 }
+  - { file: Hierve-el-Agua-1.jpg, alt: Hierve-el-Agua, width: 2048, height: 1312 }
+  - { file: Montreal-Fall-2.jpg, alt: Fall, width: 1365, height: 2048 }
+  - { file: Montreal-Fall-1.jpg, alt: Fall, width: 2048, height: 1268 }
+  - { file: Montreal-Fall-3.jpg, alt: Fall, width: 2048, height: 1348 }
 ---
-
-<!--
-  Always reload once on entering /photography/ by using a URL parameter.
-  If “reload=1” is not present, append it and reload.
--->
-<script>
-  (function() {
-    const params = new URLSearchParams(window.location.search);
-    if (!params.has('reload')) {
-      params.set('reload', '1');
-      window.location.replace(window.location.pathname + '?' + params.toString());
-    }
-  })();
-</script>
 
 0. this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
 <style>
-  /* Target only this CV page’s paragraphs and force‐justify them */
+  /* Target only this page’s paragraphs and force‐justify them */
   .layout-page p {
     text-align: justify;
   }
-  /* Masonry‐style grid CSS */
+
   /* ================================
-     PHOTO GRID (MASONRY.JS, 2 COLS)
-     ================================ */
-  .photo-grid-js {
+     PHOTO GRID (2 COLUMNS, STATIC)
+     ================================
+     Two flex columns, filled at build time (see the Liquid loop below).
+     Widths and gutters mirror the previous Masonry.js layout exactly:
+     45% columns, a 16px gutter between them and a 1rem gap between rows. */
+  .photo-grid {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
     margin-left: -0.5rem; /* half of the gutter to “pull back” */
-    width: auto;
   }
-  
-  .photo-grid-js .grid-item {
-    width: 45.0%;         /* two 45% columns + gutter */
+
+  .photo-grid .photo-column {
+    flex: 0 0 45%;
+    width: 45%;
+    min-width: 0;
+  }
+
+  .photo-grid .grid-item {
     padding-left: 0.5rem; /* left‐side gutter of 0.5rem */
     margin-bottom: 1rem;  /* vertical gutter between rows */
   }
-  
-  .photo-grid-js .grid-item img {
+
+  .photo-grid .grid-item img {
     display: block;
     width: 100%;
     height: auto;
-    border-radius: 4px;                          
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);     
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
-  
+
   /* Lightbox styles */
   #lightbox {
     position: fixed;
@@ -81,84 +103,42 @@ permalink: /photography/
     border-radius: 0.5rem;
     transition: transform 0.3s ease;
   }
-
-  /* Responsive: 2 columns below 768px */
-  /* @media (max-width: 768px) {
-    .photo-grid-js .grid-item {
-      width: 50%;
-    }
-  } */
-  /* Responsive: 1 column below 480px */
-  /* @media (max-width: 480px) {
-    .photo-grid-js .grid-item {
-      width: 100%;
-    }
-  } */
 </style>
 
 When I am not working or doing research, I really like taking photos, especially **landscapes**, **astrophotography** and **moon/sun alignments**. Here are a few photos that I like.
 
-<!-- ======= PHOTO GRID SECTION ======= -->
-<div class="photo-grid-js">
-  <div class="grid-item">
-    <img src="../assets/photos/Hummingbird-3.jpg" alt="Hummingbird" onclick="openLightbox(this)">
+<!-- ======= PHOTO GRID SECTION =======
+  Assign each photo to the currently shorter column. Heights are estimated for
+  a 370px wide image plus the 16px row gap; only the ratios matter, so the
+  assignment is the same at any screen width. -->
+{%- assign left_photos = "" | split: "" -%}
+{%- assign right_photos = "" | split: "" -%}
+{%- assign left_height = 0.0 -%}
+{%- assign right_height = 0.0 -%}
+{%- for photo in page.photos -%}
+  {%- assign item_height = photo.height | times: 370.0 | divided_by: photo.width | plus: 16 -%}
+  {%- if left_height <= right_height -%}
+    {%- assign left_photos = left_photos | push: photo -%}
+    {%- assign left_height = left_height | plus: item_height -%}
+  {%- else -%}
+    {%- assign right_photos = right_photos | push: photo -%}
+    {%- assign right_height = right_height | plus: item_height -%}
+  {%- endif -%}
+{%- endfor -%}
+<div class="photo-grid">
+  <div class="photo-column">
+    {%- for photo in left_photos %}
+    <div class="grid-item">
+      <img src="../assets/photos/{{ photo.file }}" width="{{ photo.width }}" height="{{ photo.height }}" alt="{{ photo.alt }}" onclick="openLightbox(this)">
+    </div>
+    {%- endfor %}
   </div>
-  <div class="grid-item">
-    <img src="../assets/photos/Zimapan-2.jpg" alt="Zimapan" onclick="openLightbox(this)">
-  </div>
-  <div class="grid-item">
-    <img src="../assets/photos/Hierve-el-Agua-2.jpg" alt="Hierve-el-Agua" onclick="openLightbox(this)">
-  </div>
-  <div class="grid-item">
-    <img src="../assets/photos/Guelaguetza-1.jpg" alt="Guelaguetza" onclick="openLightbox(this)">
-  </div>
-  <div class="grid-item">
-    <img src="../assets/photos/Xochimilco-3.jpg" alt="Xochimilco" onclick="openLightbox(this)">
-  </div>
-  <div class="grid-item">
-    <img src="../assets/photos/Tadoussac.jpg" alt="Tadoussac" onclick="openLightbox(this)">
-  </div>
-  <div class="grid-item">
-    <img src="../assets/photos/Moon-HDR.jpg" alt="Moon-HDR" onclick="openLightbox(this)">
-  </div>
-  <div class="grid-item">
-    <img src="../assets/photos/Zimapan-1.jpg" alt="Zimapan" onclick="openLightbox(this)">
-  </div>
-  <div class="grid-item">
-    <img src="../assets/photos/Iztaccihuatl-1.jpg" alt="Iztaccihuatl" onclick="openLightbox(this)">
-  </div>
-  <div class="grid-item">
-    <img src="../assets/photos/Dia-de-Muertos-1.jpg" alt="Dia-de-Muertos" onclick="openLightbox(this)">
-  </div>
-  <div class="grid-item">
-    <img src="../assets/photos/Camilo-1.jpg" alt="Camilo" onclick="openLightbox(this)">
-  </div>
-  <div class="grid-item">
-    <img src="../assets/photos/Hummingbird-5.jpg" alt="Hummingbird" onclick="openLightbox(this)">
-  </div>
-  <div class="grid-item">
-    <img src="../assets/photos/Angel-de-la-Independencia-1.jpg" alt="Angel-de-la-Independencia" onclick="openLightbox(this)">
-  </div>
-  <div class="grid-item">
-    <img src="../assets/photos/Dia-de-Muertos-2.jpg" alt="Dia-de-Muertos" onclick="openLightbox(this)">
-  </div>
-  <div class="grid-item">
-    <img src="../assets/photos/Hummingbird-1.jpg" alt="Hummingbird" onclick="openLightbox(this)">
-  </div>
-  <div class="grid-item">
-    <img src="../assets/photos/Clouds-1.jpg" alt="Clouds" onclick="openLightbox(this)">
-  </div>
-  <div class="grid-item">
-    <img src="../assets/photos/Hierve-el-Agua-1.jpg" alt="Hierve-el-Agua" onclick="openLightbox(this)">
-  </div>
-  <div class="grid-item">
-    <img src="../assets/photos/Montreal-Fall-2.jpg" alt="Fall" onclick="openLightbox(this)">
-  </div>
-  <div class="grid-item">
-    <img src="../assets/photos/Montreal-Fall-1.jpg" alt="Fall" onclick="openLightbox(this)">
-  </div>
-  <div class="grid-item">
-    <img src="../assets/photos/Montreal-Fall-3.jpg" alt="Fall" onclick="openLightbox(this)">
+  <div class="photo-column">
+    {%- for photo in right_photos %}
+    <div class="grid-item">
+      <img src="../assets/photos/{{ photo.file }}" width="{{ photo.width }}" height="{{ photo.height }}" alt="{{ photo.alt }}" onclick="openLightbox(this)">
+    </div>
+    {%- endfor %}
   </div>
 </div>
 
@@ -167,22 +147,7 @@ When I am not working or doing research, I really like taking photos, especially
   <img id="lightbox-img" src="" alt="Expanded Image">
 </div>
 
-<!-- Include imagesLoaded + Masonry.js from CDN -->
-<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    var grid = document.querySelector('.photo-grid-js');
-    imagesLoaded(grid, function() {
-      new Masonry(grid, {
-        itemSelector: '.grid-item',
-        percentPosition: true,
-        gutter: 16
-      });
-    });
-  });
-
   function openLightbox(img) {
     const lightbox = document.getElementById("lightbox");
     const lightboxImg = document.getElementById("lightbox-img");
