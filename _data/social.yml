@@ -18,7 +18,7 @@ google-drive:
   icon: icon-google-drive
 google-scholar:
   name: Google Scholar
-  icon: icon-library
+  icon: icon-google-scholar
   prepend: "https://scholar.google.com/citations?user="
 facebook:
   name: Facebook
